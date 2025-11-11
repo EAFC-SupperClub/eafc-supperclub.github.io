@@ -1,85 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Supper Club League Tables</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Supper Club — Tournament Dashboard</title>
 <style>
-  body { font-family: Arial, sans-serif; margin: 20px; background: #f9f9f9; color: #333; }
-  h1, h2 { text-align: center; }
-  table { width: 100%; border-collapse: collapse; margin-bottom: 40px; }
-  th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
-  th { background: #333; color: #fff; }
-  tr:nth-child(even) { background: #f2f2f2; }
-  .excellent { color: green; font-weight: bold; }
-  .reliable { color: blue; font-weight: bold; }
-  .inconsistent { color: orange; font-weight: bold; }
-  .unreliable { color: red; font-weight: bold; }
+  :root{
+    --bg:#0b0f12;
+    --panel:#0f1620;
+    --muted:#9aa7b2;
+    --accent:#2dd4bf;
+    --win:#16a34a;
+    --loss:#ef4444;
+    --table-border: rgba(255,255,255,0.06);
+    --row-alt: rgba(255,255,255,0.02);
+    --card-shadow: 0 6px 18px rgba(2,6,23,0.7);
+  }
+  html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;}
+  body{background:linear-gradient(180deg,#061018 0%, #07131a 100%); color:#e6eef3; padding:28px;}
+  .container{max-width:1100px;margin:0 auto;}
+  header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+  .title{font-size:28px;font-weight:700;letter-spacing:-0.5px}
+  .subtitle{color:var(--muted); font-size:13px}
+  .card{background:var(--panel); border:1px solid var(--table-border); border-radius:10px; padding:18px; box-shadow:var(--card-shadow); margin-bottom:18px}
+  h2{margin:0 0 12px 0;font-size:18px}
+  table{width:100%;border-collapse:collapse;font-size:13px;}
+  th,td{padding:10px 8px;border-bottom:1px solid rgba(255,255,255,0.03);text-align:center}
+  thead th{background:transparent;color:var(--muted);font-weight:600; font-size:12px; text-transform:uppercase; letter-spacing:0.6px}
+  tbody tr:nth-child(even){background:var(--row-alt)}
+  .small{font-size:12px;color:var(--muted)}
+  .icon-excellent{color:var(--accent); font-weight:700}
+  .icon-reliable{color:#60a5fa; font-weight:700}
+  .icon-inconsistent{color:#f59e0b; font-weight:700}
+  .icon-unreliable{color:var(--loss); font-weight:700}
+  .win{color:var(--win); font-weight:700}
+  .loss{color:var(--loss); font-weight:700}
+  .muted{color:var(--muted)}
+  .flex{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  @media (max-width:900px){
+    th,td{padding:8px 6px;font-size:12px}
+    .title{font-size:20px}
+  }
+  .note{color:var(--muted);font-size:13px;margin-top:8px}
 </style>
 </head>
 <body>
+<div class="container">
+  <header>
+    <div>
+      <div class="title">Supper Club — Tournament Dashboard</div>
+      <div class="subtitle">Summary of tournaments and player reliability (public view)</div>
+    </div>
+  </header>
 
-<h1>Supper Club League</h1>
+  <!-- Tournament-level summary -->
+  <section class="card" id="tournaments">
+    <h2>League — Tournament Summary (10/31 → 11/08)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Opponent</th>
+          <th>Our Turns</th>
+          <th>Our Goals</th>
+          <th>Opponent Turns</th>
+          <th>Opponent Goals</th>
+          <th>Completion %</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>2025-10-31</td><td>A-LEAGUE</td><td>24</td><td>228</td><td>18</td><td>186</td><td>100%</td><td class="win">✅ Win</td></tr>
+        <tr><td>2025-11-01</td><td>Libyan Stars</td><td>27</td><td>276</td><td>31</td><td>325</td><td>56%</td><td class="loss">❌ Loss</td></tr>
+        <tr><td>2025-11-02</td><td>World Cup 1966</td><td>21</td><td>201</td><td>18</td><td>157</td><td>100%</td><td class="win">✅ Win</td></tr>
+        <tr><td>2025-11-03</td><td>PUNK BOND.</td><td>10</td><td>81</td><td>24</td><td>260</td><td>42%</td><td class="loss">❌ Loss</td></tr>
+        <tr><td>2025-11-04</td><td>BENGAL LEGENDS</td><td>18</td><td>178</td><td>21</td><td>234</td><td>75%</td><td class="loss">❌ Loss</td></tr>
+        <tr><td>2025-11-05</td><td>THANOS XD</td><td>24</td><td>231</td><td>20</td><td>208</td><td>100%</td><td class="win">✅ Win</td></tr>
+        <tr><td>2025-11-06</td><td>NomChomPoo</td><td>10</td><td>96</td><td>18</td><td>171</td><td>42%</td><td class="loss">❌ Loss</td></tr>
+        <tr><td>2025-11-07</td><td>Gazipur Fighters</td><td>24</td><td>243</td><td>24</td><td>220</td><td>100%</td><td class="win">✅ Win</td></tr>
+        <tr><td>2025-11-08</td><td>Arabian Glory</td><td>21</td><td>197</td><td>21</td><td>205</td><td>88%</td><td class="loss">❌ Loss</td></tr>
+      </tbody>
+    </table>
+    <div class="note">Total goals: <strong>1,500</strong> — Total turns: <strong>155</strong> / <strong>207</strong> possible — Completion: <strong>75%</strong> — Record: <strong>3W - 5L</strong></div>
+  </section>
 
-<h2>PLAYER-LEVEL CUMULATIVE TRACKER</h2>
-<table>
-  <tr>
-    <th>Player</th>
-    <th>Tournaments Played</th>
-    <th>Possible Turns</th>
-    <th>Turns Taken</th>
-    <th>Missed Turns</th>
-    <th>Reliability %</th>
-    <th>Reliability</th>
-  </tr>
-  <tr><td>club_africain</td><td>8</td><td>24</td><td>24</td><td>0</td><td>100</td><td class="excellent">⭐ Excellent</td></tr>
-  <tr><td>Logic-dk</td><td>7</td><td>21</td><td>21</td><td>0</td><td>100</td><td class="excellent">⭐ Excellent</td></tr>
-  <tr><td>Gdog</td><td>5</td><td>15</td><td>15</td><td>0</td><td>100</td><td class="excellent">⭐ Excellent</td></tr>
-  <tr><td>jkjjj</td><td>7</td><td>21</td><td>21</td><td>0</td><td>100</td><td class="excellent">⭐ Excellent</td></tr>
-  <tr><td>Fc-Amine-Dz</td><td>3</td><td>9</td><td>9</td><td>0</td><td>100</td><td class="excellent">⭐ Excellent</td></tr>
-  <tr><td>redevil</td><td>4</td><td>12</td><td>12</td><td>0</td><td>100</td><td class="excellent">⭐ Excellent</td></tr>
-  <tr><td>El_CAN</td><td>2</td><td>6</td><td>6</td><td>0</td><td>100</td><td class="excellent">⭐ Excellent</td></tr>
-  <tr><td>Zusty673</td><td>3</td><td>9</td><td>7</td><td>2</td><td>78</td><td class="reliable">✅ Reliable</td></tr>
-  <tr><td>Yasser</td><td>2</td><td>6</td><td>6</td><td>0</td><td>100</td><td class="excellent">⭐ Excellent</td></tr>
-  <tr><td>goroblack</td><td>3</td><td>9</td><td>9</td><td>0</td><td>100</td><td class="excellent">⭐ Excellent</td></tr>
-  <tr><td>Sahak3an</td><td>3</td><td>9</td><td>6</td><td>3</td><td>67</td><td class="inconsistent">⚠️ Inconsistent</td></tr>
-  <tr><td>Thierre951</td><td>2</td><td>6</td><td>3</td><td>3</td><td>50</td><td class="inconsistent">⚠️ Inconsistent</td></tr>
-  <tr><td>EL.BICHO</td><td>3</td><td>9</td><td>3</td><td>6</td><td>33</td><td class="inconsistent">⚠️ Inconsistent</td></tr>
-  <tr><td>mauricio05</td><td>4</td><td>12</td><td>9</td><td>3</td><td>75</td><td class="reliable">✅ Reliable</td></tr>
-  <tr><td>Shyam</td><td>2</td><td>6</td><td>1</td><td>5</td><td>17</td><td class="unreliable">❌ Unreliable</td></tr>
-  <tr><td>CHELSEA</td><td>3</td><td>9</td><td>0</td><td>9</td><td>0</td><td class="unreliable">❌ Unreliable</td></tr>
-  <tr><td>Flamengo</td><td>3</td><td>9</td><td>0</td><td>9</td><td>0</td><td class="unreliable">❌ Unreliable</td></tr>
-  <tr><td>Bekzhanbay</td><td>2</td><td>6</td><td>0</td><td>6</td><td>0</td><td class="unreliable">❌ Unreliable</td></tr>
-  <tr><td>sofiali</td><td>2</td><td>6</td><td>0</td><td>6</td><td>0</td><td class="unreliable">❌ Unreliable</td></tr>
-  <tr><td>viperbites</td><td>2</td><td>6</td><td>0</td><td>6</td><td>0</td><td class="unreliable">❌ Unreliable</td></tr>
-  <tr><td>MTM220</td><td>2</td><td>6</td><td>0</td><td>6</td><td>0</td><td class="unreliable">❌ Unreliable</td></tr>
-  <tr><td>SirDjango89</td><td>1</td><td>3</td><td>0</td><td>3</td><td>0</td><td class="unreliable">❌ Unreliable</td></tr>
-  <tr><td>jona</td><td>2</td><td>6</td><td>0</td><td>6</td><td>0</td><td class="unreliable">❌ Unreliable</td></tr>
-  <tr><td>malls.wrld</td><td>3</td><td>9</td><td>3</td><td>6</td><td>33</td><td class="inconsistent">⚠️ Inconsistent</td></tr>
-  <tr><td>Bayernmaniac</td><td>1</td><td>3</td><td>3</td><td>0</td><td>100</td><td class="excellent">⭐ Excellent</td></tr>
-  <tr><td>stegosaurus</td><td>1</td><td>3</td><td>3</td><td>0</td><td>100</td><td class="excellent">⭐ Excellent</td></tr>
-</table>
+  <!-- Player-level cumulative tracker -->
+  <section class="card" id="players">
+    <h2>Player-Level Cumulative Tracker (appeared at least once)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Player</th>
+          <th>Tournaments</th>
+          <th>Possible Turns</th>
+          <th>Turns Taken</th>
+          <th>Missed Turns</th>
+          <th>Reliability %</th>
+          <th>Reliability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>club_africain</td><td>8</td><td>24</td><td>24</td><td>0</td><td>100</td><td class="icon-excellent">⭐ Excellent</td></tr>
+        <tr><td>Logic-dk</td><td>7</td><td>21</td><td>21</td><td>0</td><td>100</td><td class="icon-excellent">⭐ Excellent</td></tr>
+        <tr><td>Gdog</td><td>5</td><td>15</td><td>15</td><td>0</td><td>100</td><td class="icon-excellent">⭐ Excellent</td></tr>
+        <tr><td>jkjjj</td><td>7</td><td>21</td><td>21</td><td>0</td><td>100</td><td class="icon-excellent">⭐ Excellent</td></tr>
+        <tr><td>Fc-Amine-Dz</td><td>3</td><td>9</td><td>9</td><td>0</td><td>100</td><td class="icon-excellent">⭐ Excellent</td></tr>
+        <tr><td>redevil</td><td>4</td><td>12</td><td>12</td><td>0</td><td>100</td><td class="icon-excellent">⭐ Excellent</td></tr>
+        <tr><td>El_CAN</td><td>2</td><td>6</td><td>6</td><td>0</td><td>100</td><td class="icon-excellent">⭐ Excellent</td></tr>
+        <tr><td>Zusty673</td><td>3</td><td>9</td><td>7</td><td>2</td><td>78</td><td class="icon-reliable">✅ Reliable</td></tr>
+        <tr><td>Yasser</td><td>2</td><td>6</td><td>6</td><td>0</td><td>100</td><td class="icon-excellent">⭐ Excellent</td></tr>
+        <tr><td>goroblack</td><td>3</td><td>9</td><td>9</td><td>0</td><td>100</td><td class="icon-excellent">⭐ Excellent</td></tr>
+        <tr><td>Sahak3an</td><td>3</td><td>9</td><td>6</td><td>3</td><td>67</td><td class="icon-inconsistent">⚠️ Inconsistent</td></tr>
+        <tr><td>Thierre951</td><td>2</td><td>6</td><td>3</td><td>3</td><td>50</td><td class="icon-inconsistent">⚠️ Inconsistent</td></tr>
+        <tr><td>EL.BICHO</td><td>3</td><td>9</td><td>3</td><td>6</td><td>33</td><td class="icon-inconsistent">⚠️ Inconsistent</td></tr>
+        <tr><td>mauricio05</td><td>4</td><td>12</td><td>9</td><td>3</td><td>75</td><td class="icon-reliable">✅ Reliable</td></tr>
+        <tr><td>Shyam</td><td>2</td><td>6</td><td>1</td><td>5</td><td>17</td><td class="icon-unreliable">❌ Unreliable</td></tr>
+        <tr><td>CHELSEA</td><td>3</td><td>9</td><td>0</td><td>9</td><td>0</td><td class="icon-unreliable">❌ Unreliable</td></tr>
+        <tr><td>Flamengo</td><td>3</td><td>9</td><td>0</td><td>9</td><td>0</td><td class="icon-unreliable">❌ Unreliable</td></tr>
+        <tr><td>Bekzhanbay</td><td>2</td><td>6</td><td>0</td><td>6</td><td>0</td><td class="icon-unreliable">❌ Unreliable</td></tr>
+        <tr><td>sofiali</td><td>2</td><td>6</td><td>0</td><td>6</td><td>0</td><td class="icon-unreliable">❌ Unreliable</td></tr>
+        <tr><td>viperbites</td><td>2</td><td>6</td><td>0</td><td>6</td><td>0</td><td class="icon-unreliable">❌ Unreliable</td></tr>
+        <tr><td>MTM220</td><td>2</td><td>6</td><td>0</td><td>6</td><td>0</td><td class="icon-unreliable">❌ Unreliable</td></tr>
+        <tr><td>SirDjango89</td><td>1</td><td>3</td><td>0</td><td>3</td><td>0</td><td class="icon-unreliable">❌ Unreliable</td></tr>
+        <tr><td>jona</td><td>2</td><td>6</td><td>0</td><td>6</td><td>0</td><td class="icon-unreliable">❌ Unreliable</td></tr>
+        <tr><td>malls.wrld</td><td>3</td><td>9</td><td>3</td><td>6</td><td>33</td><td class="icon-inconsistent">⚠️ Inconsistent</td></tr>
+        <tr><td>Bayernmaniac</td><td>1</td><td>3</td><td>3</td><td>0</td><td>100</td><td class="icon-excellent">⭐ Excellent</td></tr>
+        <tr><td>stegosaurus</td><td>1</td><td>3</td><td>3</td><td>0</td><td>100</td><td class="icon-excellent">⭐ Excellent</td></tr>
+      </tbody>
+    </table>
+    <div class="note">Reliability: <span class="icon-excellent">⭐ Excellent</span> (≥90%) · <span class="icon-reliable">✅ Reliable</span> (75–89%) · <span class="icon-inconsistent">⚠️ Inconsistent</span> (25–74%) · <span class="icon-unreliable">❌ Unreliable</span> (<25%)</div>
+  </section>
 
-<h2>LEAGUE-LEVEL SUMMARY</h2>
-<table>
-  <tr>
-    <th>Date</th>
-    <th>Opponent</th>
-    <th>Our Turns</th>
-    <th>Our Goals</th>
-    <th>Opponent Turns</th>
-    <th>Opponent Goals</th>
-    <th>Completion %</th>
-    <th>Result</th>
-  </tr>
-  <tr><td>2025-10-31</td><td>A-LEAGUE</td><td>24</td><td>228</td><td>18</td><td>186</td><td>100%</td><td>✅ Win</td></tr>
-  <tr><td>2025-11-01</td><td>Libyan Stars</td><td>27</td><td>276</td><td>31</td><td>325</td><td>56%</td><td>❌ Loss</td></tr>
-  <tr><td>2025-11-02</td><td>World Cup 1966</td><td>21</td><td>201</td><td>18</td><td>157</td><td>100%</td><td>✅ Win</td></tr>
-  <tr><td>2025-11-03</td><td>PUNK BOND.</td><td>10</td><td>81</td><td>24</td><td>260</td><td>42%</td><td>❌ Loss</td></tr>
-  <tr><td>2025-11-04</td><td>BENGAL LEGENDS</td><td>18</td><td>178</td><td>21</td><td>234</td><td>75%</td><td>❌ Loss</td></tr>
-  <tr><td>2025-11-06</td><td>NomChomPoo</td><td>10</td><td>96</td><td>18</td><td>171</td><td>42%</td><td>❌ Loss</td></tr>
-  <tr><td>2025-11-07</td><td>Gazipur Fighters</td><td>24</td><td>243</td><td>24</td><td>220</td><td>100%</td><td>✅ Win</td></tr>
-  <tr><td>2025-11-08</td><td>Arabian Glory</td><td>21</td><td>197</td><td>21</td><td>205</td><td>88%</td><td>❌ Loss</td></tr>
-</table>
-
+  <div class="note">To publish: save as <code>index.html</code> in your GitHub repo root and enable GitHub Pages (Settings → Pages → Branch: main → / (root)).</div>
+</div>
 </body>
 </html>
