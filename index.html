@@ -42,21 +42,21 @@
     .title{font-size:20px}
   }
   .note{color:var(--muted);font-size:13px;margin-top:8px}
+  code{background:#0b1320;padding:2px 6px;border-radius:4px;}
 </style>
 </head>
 <body>
 <div class="container">
   <header>
     <div>
-      <div class="title">Supper Club — Tournament Dashboard</div>
-      <div class="subtitle">Summary of tournaments and player reliability (public view)</div>
+      <div class="title" id="league-name">Supper Club</div>
+      <div class="subtitle">Dynamic Tournament dashboard — data loaded from <code>tournaments.json</code></div>
     </div>
   </header>
 
-  <!-- Tournament-level summary -->
-  <section class="card" id="tournaments">
-    <h2>League — Tournament Summary (10/31 → 11/09)</h2>
-    <table>
+  <section class="card" id="tournaments-card">
+    <h2>League — Tournament Summary</h2>
+    <table id="league-summary">
       <thead>
         <tr>
           <th>Date</th>
@@ -67,28 +67,17 @@
           <th>Opponent Goals</th>
           <th>Completion %</th>
           <th>Result</th>
+          <th>Avg Goals/Turn</th>
         </tr>
       </thead>
-      <tbody>
-        <tr><td>2025-10-31</td><td>A-LEAGUE</td><td>24</td><td>228</td><td>18</td><td>186</td><td>100%</td><td class="win">✅ Win</td></tr>
-        <tr><td>2025-11-01</td><td>Libyan Stars</td><td>27</td><td>276</td><td>31</td><td>325</td><td>56%</td><td class="loss">❌ Loss</td></tr>
-        <tr><td>2025-11-02</td><td>World Cup 1966</td><td>21</td><td>201</td><td>18</td><td>157</td><td>100%</td><td class="win">✅ Win</td></tr>
-        <tr><td>2025-11-03</td><td>PUNK BOND.</td><td>10</td><td>81</td><td>24</td><td>260</td><td>42%</td><td class="loss">❌ Loss</td></tr>
-        <tr><td>2025-11-04</td><td>BENGAL LEGENDS</td><td>18</td><td>178</td><td>21</td><td>234</td><td>75%</td><td class="loss">❌ Loss</td></tr>
-        <tr><td>2025-11-05</td><td>THANOS XD</td><td>24</td><td>231</td><td>20</td><td>208</td><td>100%</td><td class="win">✅ Win</td></tr>
-        <tr><td>2025-11-06</td><td>NomChomPoo</td><td>10</td><td>96</td><td>18</td><td>171</td><td>42%</td><td class="loss">❌ Loss</td></tr>
-        <tr><td>2025-11-07</td><td>Gazipur Fighters</td><td>24</td><td>243</td><td>24</td><td>220</td><td>100%</td><td class="win">✅ Win</td></tr>
-        <tr><td>2025-11-08</td><td>Arabian Glory</td><td>21</td><td>197</td><td>21</td><td>205</td><td>88%</td><td class="loss">❌ Loss</td></tr>
-        <tr><td>2025-11-09</td><td>Tom Racing NO1</td><td>24</td><td>234</td><td>17</td><td>146</td><td>100%</td><td class="win">✅ Win</td></tr>
-      </tbody>
+      <tbody></tbody>
     </table>
-    <div class="note">Total goals: <strong>1,676</strong> — Total turns: <strong>190</strong> / <strong>248</strong> possible — Completion: <strong>77%</strong> — Record: <strong>5W - 5L</strong></div>
+    <div class="note" id="league-totals"></div>
   </section>
 
-  <!-- Player-level cumulative tracker -->
-  <section class="card" id="players">
+  <section class="card" id="players-card">
     <h2>Player-Level Cumulative Tracker (appeared at least once)</h2>
-    <table>
+    <table id="player-tracker">
       <thead>
         <tr>
           <th>Player</th>
@@ -96,42 +85,110 @@
           <th>Possible Turns</th>
           <th>Turns Taken</th>
           <th>Missed Turns</th>
+          <th>Avg Goals/Turn</th>
           <th>Reliability %</th>
           <th>Reliability</th>
         </tr>
       </thead>
-      <tbody>
-        <tr><td>club_africain</td><td>9</td><td>27</td><td>27</td><td>0</td><td>100</td><td class="icon-excellent">⭐ Excellent</td></tr>
-        <tr><td>Logic-dk</td><td>8</td><td>24</td><td>24</td><td>0</td><td>100</td><td class="icon-excellent">⭐ Excellent</td></tr>
-        <tr><td>Gdog</td><td>6</td><td>18</td><td>18</td><td>0</td><td>100</td><td class="icon-excellent">⭐ Excellent</td></tr>
-        <tr><td>jkjjj</td><td>8</td><td>24</td><td>24</td><td>0</td><td>100</td><td class="icon-excellent">⭐ Excellent</td></tr>
-        <tr><td>Fc-Amine-Dz</td><td>4</td><td>12</td><td>12</td><td>0</td><td>100</td><td class="icon-excellent">⭐ Excellent</td></tr>
-        <tr><td>redevil</td><td>5</td><td>15</td><td>15</td><td>0</td><td>100</td><td class="icon-excellent">⭐ Excellent</td></tr>
-        <tr><td>El_CAN</td><td>2</td><td>6</td><td>6</td><td>0</td><td>100</td><td class="icon-excellent">⭐ Excellent</td></tr>
-        <tr><td>Zusty673</td><td>3</td><td>9</td><td>7</td><td>2</td><td>78</td><td class="icon-reliable">✅ Reliable</td></tr>
-        <tr><td>Yasser</td><td>3</td><td>9</td><td>9</td><td>0</td><td>100</td><td class="icon-excellent">⭐ Excellent</td></tr>
-        <tr><td>goroblack</td><td>4</td><td>12</td><td>12</td><td>0</td><td>100</td><td class="icon-excellent">⭐ Excellent</td></tr>
-        <tr><td>Sahak3an</td><td>3</td><td>9</td><td>6</td><td>3</td><td>67</td><td class="icon-inconsistent">⚠️ Inconsistent</td></tr>
-        <tr><td>Thierre951</td><td>2</td><td>6</td><td>3</td><td>3</td><td>50</td><td class="icon-inconsistent">⚠️ Inconsistent</td></tr>
-        <tr><td>EL.BICHO</td><td>3</td><td>9</td><td>3</td><td>6</td><td>33</td><td class="icon-inconsistent">⚠️ Inconsistent</td></tr>
-        <tr><td>mauricio05</td><td>5</td><td>15</td><td>12</td><td>3</td><td>80</td><td class="icon-reliable">✅ Reliable</td></tr>
-        <tr><td>Shyam</td><td>2</td><td>6</td><td>1</td><td>5</td><td>17</td><td class="icon-unreliable">❌ Unreliable</td></tr>
-        <tr><td>CHELSEA</td><td>3</td><td>9</td><td>0</td><td>9</td><td>0</td><td class="icon-unreliable">❌ Unreliable</td></tr>
-        <tr><td>Flamengo</td><td>3</td><td>9</td><td>0</td><td>9</td><td>0</td><td class="icon-unreliable">❌ Unreliable</td></tr>
-        <tr><td>Bekzhanbay</td><td>2</td><td>6</td><td>0</td><td>6</td><td>0</td><td class="icon-unreliable">❌ Unreliable</td></tr>
-        <tr><td>sofiali</td><td>2</td><td>6</td><td>0</td><td>6</td><td>0</td><td class="icon-unreliable">❌ Unreliable</td></tr>
-        <tr><td>viperbites</td><td>2</td><td>6</td><td>0</td><td>6</td><td>0</td><td class="icon-unreliable">❌ Unreliable</td></tr>
-        <tr><td>MTM220</td><td>2</td><td>6</td><td>0</td><td>6</td><td>0</td><td class="icon-unreliable">❌ Unreliable</td></tr>
-        <tr><td>SirDjango89</td><td>1</td><td>3</td><td>0</td><td>3</td><td>0</td><td class="icon-unreliable">❌ Unreliable</td></tr>
-        <tr><td>jona</td><td>2</td><td>6</td><td>0</td><td>6</td><td>0</td><td class="icon-unreliable">❌ Unreliable</td></tr>
-        <tr><td>malls.wrld</td><td>3</td><td>9</td><td>3</td><td>6</td><td>33</td><td class="icon-inconsistent">⚠️ Inconsistent</td></tr>
-        <tr><td>Bayernmaniac</td><td>1</td><td>3</td><td>3</td><td>0</td><td>100</td><td class="icon-excellent">⭐ Excellent</td></tr>
-        <tr><td>stegosaurus</td><td>2</td><td>6</td><td>6</td><td>0</td><td>100</td><td class="icon-excellent">⭐ Excellent</td></tr>
-      </tbody>
+      <tbody></tbody>
     </table>
-    <div class="note">Reliability: <span class="icon-excellent">⭐ Excellent</span> (≥90%) · <span class="icon-reliable">✅ Reliable</span> (75–89%) · <span class="icon-inconsistent">⚠️ Inconsistent</span> (25–74%) · <span class="icon-unreliable">❌ Unreliable</span> (<25%)</div>
+    <div class="note">Reliability legend: <span class="icon-excellent">⭐ Excellent</span> (≥95%) · <span class="icon-reliable">✅ Reliable</span> (75–94%) · <span class="icon-inconsistent">⚠️ Inconsistent</span> (50–74%) · <span class="icon-unreliable">❌ Unreliable</span> (&lt;50%)</div>
   </section>
 
 </div>
+
+<script>
+// Utility helpers
+function fmt(n, digits=2){ return (Number(n) || 0).toFixed(digits); }
+function pct(n){ return Math.round(Number(n)||0) + '%'; }
+function reliabilityIcon(pctVal){
+  if (pctVal >= 95) return {text:'⭐ Excellent', cls:'icon-excellent'};
+  if (pctVal >= 75) return {text:'✅ Reliable', cls:'icon-reliable'};
+  if (pctVal >= 50) return {text:'⚠️ Inconsistent', cls:'icon-inconsistent'};
+  return {text:'❌ Unreliable', cls:'icon-unreliable'};
+}
+
+// Load tournaments.json and render tables
+fetch('tournaments.json')
+  .then(r => r.json())
+  .then(data => {
+    const leagueName = data.leagueName || 'Supper Club';
+    document.getElementById('league-name').textContent = leagueName + ' — Tournament Dashboard';
+
+    const tournaments = data.tournaments || [];
+    // sort by date desc
+    tournaments.sort((a,b)=> new Date(b.date) - new Date(a.date));
+
+    const leagueBody = document.querySelector('#league-summary tbody');
+    const playerMap = {}; // name -> {tournaments, possibleTurns, turnsTaken, goals}
+
+    let totalGoals = 0, totalTurns = 0, totalPossibleTurns = 0, wins=0, losses=0, draws=0;
+
+    tournaments.forEach(t => {
+      // append league row
+      const avgGoals = t.ourTurns ? (t.ourGoals / t.ourTurns) : 0;
+      const completionPct = t.possibleTurns ? Math.round((t.ourTurns / t.possibleTurns)*100) : Math.round((t.ourTurns / (t.players.length*3))*100);
+      let result = 'Draw';
+      if (t.ourGoals > t.opponentGoals) { result = 'Win'; wins++; }
+      else if (t.ourGoals < t.opponentGoals) { result = 'Loss'; losses++; }
+      else { draws++; }
+
+      totalGoals += t.ourGoals;
+      totalTurns += t.ourTurns;
+      totalPossibleTurns += (t.possibleTurns || (t.players.length*3));
+
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${t.date}</td>
+        <td>${t.opponent}</td>
+        <td>${t.ourTurns}</td>
+        <td>${t.ourGoals}</td>
+        <td>${fmt(avgGoals,2)}</td>
+        <td>${t.opponentTurns}</td>
+        <td>${t.opponentGoals}</td>
+        <td>${completionPct}%</td>
+        <td class="${result==='Win'?'win':'loss'}">${result}</td>`;
+      leagueBody.appendChild(row);
+
+      // accumulate player-level
+      (t.players || []).forEach(p => {
+        const name = p.name;
+        if (!playerMap[name]) playerMap[name] = {tournaments:0, possibleTurns:0, turnsTaken:0, goals:0};
+        playerMap[name].tournaments += 1;
+        playerMap[name].possibleTurns += 3;
+        playerMap[name].turnsTaken += (p.turnsTaken || 0);
+        playerMap[name].goals += (p.goals || 0);
+      });
+    });
+
+    // league totals summary
+    const completionOverall = totalPossibleTurns ? Math.round((totalTurns/totalPossibleTurns)*100) : 0;
+    document.getElementById('league-totals').innerHTML = `Total goals: <strong>${totalGoals}</strong> — Total turns: <strong>${totalTurns}</strong> / <strong>${totalPossibleTurns}</strong> possible — Completion: <strong>${completionOverall}%</strong> — Record: <strong>${wins}W - ${losses}L - ${draws}D</strong>`;
+
+    // build player table sorted by reliability then turns taken desc
+    const playersArr = Object.entries(playerMap).map(([name, p])=>{
+      const missed = p.possibleTurns - p.turnsTaken;
+      const avgGoalsPerTurn = p.turnsTaken ? (p.goals / p.turnsTaken) : 0;
+      const reliabilityPct = p.possibleTurns ? Math.round((p.turnsTaken / p.possibleTurns)*100) : 0;
+      return {name, tournaments:p.tournaments, possibleTurns:p.possibleTurns, turnsTaken:p.turnsTaken, missed, avgGoalsPerTurn, reliabilityPct};
+    });
+
+    playersArr.sort((a,b)=>{
+      if (b.reliabilityPct !== a.reliabilityPct) return b.reliabilityPct - a.reliabilityPct;
+      return b.turnsTaken - a.turnsTaken;
+    });
+
+    const playerBody = document.querySelector('#player-tracker tbody');
+    playersArr.forEach(p=>{
+      const icon = reliabilityIcon(p.reliabilityPct);
+      const tr = document.createElement('tr');
+      tr.innerHTML = `<td>${p.name}</td><td>${p.tournaments}</td><td>${p.possibleTurns}</td><td>${p.turnsTaken}</td><td>${p.missed}</td><td>${fmt(p.avgGoalsPerTurn,1)}</td><td>${p.reliabilityPct}</td><td class="${icon.cls}">${icon.text}</td>`;
+      playerBody.appendChild(tr);
+    });
+  })
+  .catch(err => {
+    document.querySelector('#league-totals').textContent = 'Error loading tournaments.json: ' + err;
+  });
+</script>
 </body>
 </html>
