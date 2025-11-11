@@ -18,7 +18,7 @@
   }
   html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;}
   body{background:linear-gradient(180deg,#061018 0%, #07131a 100%); color:#e6eef3; padding:28px;}
-  .container{max-width:1200px;margin:0 auto;}
+  .container{max-width:1100px;margin:0 auto;}
   header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
   .title{font-size:28px;font-weight:700;letter-spacing:-0.5px}
   .subtitle{color:var(--muted); font-size:13px}
@@ -59,7 +59,15 @@
     <table id="league-summary">
       <thead>
         <tr>
-          <th>Date</th><th>Opponent</th><th>Our Turns</th><th>Our Goals</th><th>Opponent Turns</th><th>Opponent Goals</th><th>Completion %</th><th>Result</th><th>Avg Goals/Turn</th>
+          <th>Date</th>
+          <th>Opponent</th>
+          <th>Our Turns</th>
+          <th>Our Goals</th>
+          <th>Opponent Turns</th>
+          <th>Opponent Goals</th>
+          <th>Completion %</th>
+          <th>Result</th>
+          <th>Avg Goals/Turn</th>
         </tr>
       </thead>
       <tbody></tbody>
@@ -72,7 +80,14 @@
     <table id="player-tracker">
       <thead>
         <tr>
-          <th>Player</th><th>Tournaments</th><th>Possible Turns</th><th>Turns Taken</th><th>Missed Turns</th><th>Avg Goals/Turn</th><th>Reliability %</th><th>Reliability</th>
+          <th>Player</th>
+          <th>Tournaments</th>
+          <th>Possible Turns</th>
+          <th>Turns Taken</th>
+          <th>Missed Turns</th>
+          <th>Avg Goals/Turn</th>
+          <th>Reliability %</th>
+          <th>Reliability</th>
         </tr>
       </thead>
       <tbody></tbody>
@@ -80,7 +95,6 @@
     <div class="note">Reliability legend: <span class="icon-excellent">⭐ Excellent</span> (≥95%) · <span class="icon-reliable">✅ Reliable</span> (75–94%) · <span class="icon-inconsistent">⚠️ Inconsistent</span> (50–74%) · <span class="icon-unreliable">❌ Unreliable</span> (&lt;50%)</div>
   </section>
 
-  <div class="note">Tip: Update <code>tournaments.json</code> in the repo to add new tournaments — the page recalculates automatically.</div>
 </div>
 
 <script>
@@ -129,11 +143,11 @@ fetch('tournaments.json')
         <td>${t.opponent}</td>
         <td>${t.ourTurns}</td>
         <td>${t.ourGoals}</td>
+        <td>${fmt(avgGoals,2)}</td>
         <td>${t.opponentTurns}</td>
         <td>${t.opponentGoals}</td>
         <td>${completionPct}%</td>
-        <td class="${result==='Win'?'win':'loss'}">${result}</td>
-        <td>${fmt(avgGoals,2)}</td>`;
+        <td class="${result==='Win'?'win':'loss'}">${result}</td>`;
       leagueBody.appendChild(row);
 
       // accumulate player-level
