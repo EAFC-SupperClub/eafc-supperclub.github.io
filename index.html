@@ -163,7 +163,8 @@ fetch('tournaments.json')
 
     // league totals summary
     const completionOverall = totalPossibleTurns ? Math.round((totalTurns/totalPossibleTurns)*100) : 0;
-    document.getElementById('league-totals').innerHTML = `Total goals: <strong>${totalGoals}</strong> — Total turns: <strong>${totalTurns}</strong> / <strong>${totalPossibleTurns}</strong> possible — Completion: <strong>${completionOverall}%</strong> — Record: <strong>${wins}W - ${losses}L - ${draws}D</strong>`;
+    const goalsPerTurnOverall = fmt((totalGoals/totalTurns),2);
+    document.getElementById('league-totals').innerHTML = `Total goals: <strong>${totalGoals}</strong> — Total turns: <strong>${totalTurns}</strong> / <strong>${totalPossibleTurns}</strong> possible — Overall Avg Goals/Turn: <strong>${goalsPerTurnOverall}</strong> — Completion: <strong>${completionOverall}%</strong> — Record: <strong>${wins}W - ${losses}L - ${draws}D</strong>`;
 
     // build player table sorted by reliability then turns taken desc
     const playersArr = Object.entries(playerMap).map(([name, p])=>{
