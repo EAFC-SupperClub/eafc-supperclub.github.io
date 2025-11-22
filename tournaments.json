@@ -2,7 +2,464 @@
   "leagueName": "Supper Club",
   "tournaments": [
     {
-      "date": "2025-11-14",
+      "date": "2025-11-21",
+      "season": 11,
+      "opponent": "FIFA Experts (Arabic)",
+      "ourTurns": 21,
+      "ourGoals": 192,
+      "opponentTurns": 7,
+      "opponentGoals": 68,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "Fc-Amine-Dz",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "El_CAN",
+          "teamOVR": 118,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "jkjjj",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 32,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "club_africain",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Gdog",
+          "teamOVR": 117,
+          "turnsTaken": 3,
+          "goals": 23,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "goroblack",
+          "teamOVR": 117,
+          "turnsTaken": 3,
+          "goals": 26,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Thierre951",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Etsmw",
+          "teamOVR": 115,
+          "turnsTaken": 3,
+          "goals": 26,
+          "signedUp": true,
+          "lastLoginDays": 0
+        }
+      ]
+    },
+    {
+      "date": "2025-11-20",
+      "season": 11,
+      "opponent": "Star League Arabic",
+      "ourTurns": 24,
+      "ourGoals": 234,
+      "opponentTurns": 22,
+      "opponentGoals": 214,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "stegosarusu",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 31,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "jkjjj",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 31,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "club_africain",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 33,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 31,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Bayernmaniac",
+          "teamOVR": 117,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Logic-dk",
+          "teamOVR": 117,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Gdog",
+          "teamOVR": 117,
+          "turnsTaken": 3,
+          "goals": 23,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "goroblack",
+          "teamOVR": 117,
+          "turnsTaken": 3,
+          "goals": 27,
+          "signedUp": true,
+          "lastLoginDays": 0
+        }
+      ]
+    },
+    {
+      "date": "2025-11-19",
+      "season": 10,
+      "opponent": "VORTEX",
+      "ourTurns": 24,
+      "ourGoals": 223,
+      "opponentTurns": 22,
+      "opponentGoals": 231,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "stegosaurus",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 32,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "jkjjj",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 26,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "club_africain",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 26,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Logic-dk",
+          "teamOVR": 117,
+          "turnsTaken": 3,
+          "goals": 26,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "redevil",
+          "teamOVR": 117,
+          "turnsTaken": 3,
+          "goals": 27,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Gdog",
+          "teamOVR": 117,
+          "turnsTaken": 3,
+          "goals": 24,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "goroblack",
+          "teamOVR": 117,
+          "turnsTaken": 3,
+          "goals": 32,
+          "signedUp": true,
+          "lastLoginDays": 0
+        }
+      ]
+    },
+    {
+      "date": "2025-11-18",
+      "season": 10,
+      "opponent": "Russian League 202",
+      "ourTurns": 18,
+      "ourGoals": 183,
+      "opponentTurns": 24,
+      "opponentGoals": 264,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "jkjjj",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "stegosaurus",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 35,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "club_africain",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 23,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 33,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Logic-dk",
+          "teamOVR": 117,
+          "turnsTaken": 3,
+          "goals": 32,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Yasser",
+          "teamOVR": 118,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "goroblack",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "sofiali",
+          "teamOVR": 118,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        }
+      ]
+    },
+    {
+      "date": "2025-11-17",
+      "season": 10,
+      "opponent": "IN Team",
+      "ourTurns": 18,
+      "ourGoals": 179,
+      "opponentTurns": 24,
+      "opponentGoals": 280,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "club_africain",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "jkjjj",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 33,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Logic-dk",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Yasser",
+          "teamOVR": 117,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "redevil",
+          "teamOVR": 118,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "mauricio05",
+          "teamOVR": 117,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "goroblack",
+          "teamOVR": 117,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": false,
+          "lastLoginDays": 0
+        }
+      ]
+    },
+    {
+      "date": "2025-11-16",
+      "season": 10,
+      "opponent": "zsh league",
+      "ourTurns": 24,
+      "ourGoals": 228,
+      "opponentTurns": 21,
+      "opponentGoals": 221,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "jkjjj",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "club_africain",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 27,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Logic-dk",
+          "teamOVR": 117,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Yasser",
+          "teamOVR": 117,
+          "turnsTaken": 3,
+          "goals": 32,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "redevil",
+          "teamOVR": 117,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "mauricio05",
+          "teamOVR": 117,
+          "turnsTaken": 3,
+          "goals": 26,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "goroblack",
+          "teamOVR": 117,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": false,
+          "lastLoginDays": 0
+        }
+      ]
+    },
+    {
+      "date": "2025-11-15",
+      "season": 10,
       "opponent": "Blue",
       "ourTurns": 24,
       "ourGoals": 228,
@@ -77,7 +534,8 @@
       ]
     },
     {
-      "date": "2025-11-13",
+      "date": "2025-11-14",
+      "season": 10,
       "opponent": "FC ETERNITY",
       "ourTurns": 24,
       "ourGoals": 225,
@@ -152,7 +610,8 @@
       ]
     },
     {
-      "date": "2025-11-12",
+      "date": "2025-11-13",
+      "season": 10,
       "opponent": "PerNOH159",
       "ourTurns": 24,
       "ourGoals": 229,
@@ -227,7 +686,8 @@
       ]
     },
     {
-      "date": "2025-11-11",
+      "date": "2025-11-12",
+      "season": 10,
       "opponent": "FIFA FREESTYLERS",
       "ourTurns": 24,
       "ourGoals": 227,
@@ -302,7 +762,8 @@
       ]
     },
     {
-      "date": "2025-11-09",
+      "date": "2025-11-10",
+      "season": 10,
       "opponent": "Tom Racing NO1",
       "ourTurns": 24,
       "ourGoals": 234,
@@ -377,7 +838,8 @@
       ]
     },
     {
-      "date": "2025-11-08",
+      "date": "2025-11-09",
+      "season": 10,
       "opponent": "Arabian Glory",
       "ourTurns": 21,
       "ourGoals": 197,
@@ -452,7 +914,8 @@
       ]
     },
     {
-      "date": "2025-11-07",
+      "date": "2025-11-08",
+      "season": 10,
       "opponent": "Gazipur Fighters",
       "ourTurns": 24,
       "ourGoals": 243,
@@ -527,7 +990,8 @@
       ]
     },
     {
-      "date": "2025-11-06",
+      "date": "2025-11-07",
+      "season": 10,
       "opponent": "NomChomPoo",
       "ourTurns": 10,
       "ourGoals": 96,
@@ -602,7 +1066,8 @@
       ]
     },
     {
-      "date": "2025-11-05",
+      "date": "2025-11-06",
+      "season": 10,
       "opponent": "THANOS XD",
       "ourTurns": 24,
       "ourGoals": 231,
@@ -677,7 +1142,8 @@
       ]
     },
     {
-      "date": "2025-11-04",
+      "date": "2025-11-05",
+      "season": 10,
       "opponent": "BENGAL LEGENDS",
       "ourTurns": 18,
       "ourGoals": 178,
@@ -752,7 +1218,8 @@
       ]
     },
     {
-      "date": "2025-11-03",
+      "date": "2025-11-04",
+      "season": 10,
       "opponent": "PUNK BOND.",
       "ourTurns": 10,
       "ourGoals": 81,
@@ -827,7 +1294,8 @@
       ]
     },
     {
-      "date": "2025-11-02",
+      "date": "2025-11-03",
+      "season": 10,
       "opponent": "World Cup 1966",
       "ourTurns": 21,
       "ourGoals": 201,
@@ -902,7 +1370,8 @@
       ]
     },
     {
-      "date": "2025-11-01",
+      "date": "2025-11-02",
+      "season": 10,
       "opponent": "Libyan Stars",
       "ourTurns": 27,
       "ourGoals": 276,
@@ -1041,7 +1510,8 @@
       ]
     },
     {
-      "date": "2025-10-31",
+      "date": "2025-11-01",
+      "season": 10,
       "opponent": "A-LEAGUE",
       "ourTurns": 24,
       "ourGoals": 228,
