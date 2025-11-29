@@ -4,6 +4,82 @@
     {
       "date": "2025-11-27",
       "season": 11,
+      "opponent": "Vietname TVA",
+      "ourTurns": 24,
+      "ourGoals": 235,
+      "opponentTurns": 17,
+      "opponentGoals": 169,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "Logic-dk",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "stegosaurus",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 33,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "club_africain",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 35,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Gdog",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 25,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "jkjjj",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "xyz.shter",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 31,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "goroblack",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 25,
+          "signedUp": false,
+          "lastLoginDays": 0
+        }
+      ]
+    },
+    {
+      "date": "2025-11-27",
+      "season": 11,
       "opponent": "KiNG of League",
       "ourTurns": 24,
       "ourGoals": 235,
