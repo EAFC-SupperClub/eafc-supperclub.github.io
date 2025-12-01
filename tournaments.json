@@ -2,7 +2,147 @@
   "leagueName": "Supper Club",
   "tournaments": [
     {
-      "date": "2025-11-27",
+      "date": "2025-11-29",
+      "season": 11,
+      "opponent": "Vietname TVA",
+      "ourTurns": 27,
+      "ourGoals": 279,
+      "opponentTurns": 36,
+      "opponentGoals": 323,
+      "possibleTurns": 48,
+      "players": [
+        {
+          "name": "Bayernmaniac",
+          "teamOVR": 119,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Logic-dk",
+          "teamOVR": 118,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "stegosaurus",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 35,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "club_africain",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 33,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 25,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "El_CAN",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 32,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Gdog",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 32,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "jkjjj",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 33,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "goroblack",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 33,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "xyz.shter",
+          "teamOVR": 118,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Thierre951",
+          "teamOVR": 118,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Yasser",
+          "teamOVR": 117,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "redevil",
+          "teamOVR": 117,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Zusty673",
+          "teamOVR": 117,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "mauricio05",
+          "teamOVR": 117,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "ULTRÄ",
+          "teamOVR": 116,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        }
+      ]
+    },
+    {
+      "date": "2025-11-28",
       "season": 11,
       "opponent": "Vietname TVA",
       "ourTurns": 24,
