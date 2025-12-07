@@ -233,12 +233,20 @@
       "date": "2025-12-03",
       "season": 11,
       "opponent": "FR FranceRespect",
-      "ourTurns": 24,
+      "ourTurns": 36,
       "ourGoals": 328,
       "opponentTurns": 21,
       "opponentGoals": 455,
       "possibleTurns": 48,
       "players": [
+        {
+          "name": "jkjjj",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
         {
           "name": "Sahak3an",
           "teamOVR": 110,
@@ -288,14 +296,6 @@
           "lastLoginDays": 0
         },
         {
-          "name": "jkjjj",
-          "teamOVR": 118,
-          "turnsTaken": 3,
-          "goals": 29,
-          "signedUp": true,
-          "lastLoginDays": 0
-        },
-        {
           "name": "goroblack",
           "teamOVR": 118,
           "turnsTaken": 3,
@@ -320,6 +320,14 @@
           "lastLoginDays": 0
         },
         {
+          "name": "mauricio05",
+          "teamOVR": 117,
+          "turnsTaken": 3,
+          "goals": 24,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
           "name": "sholexy",
           "teamOVR": 118,
           "turnsTaken": 3,
@@ -336,6 +344,14 @@
           "lastLoginDays": 0
         },
         {
+          "name": "ULTRÄ",
+          "teamOVR": 116,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
           "name": "ARES",
           "teamOVR": 117,
           "turnsTaken": 3,
@@ -344,26 +360,10 @@
           "lastLoginDays": 0
         },
         {
-          "name": "mauricio05",
-          "teamOVR": 117,
-          "turnsTaken": 3,
-          "goals": 24,
-          "signedUp": false,
-          "lastLoginDays": 0
-        },
-        {
           "name": "linkqngin",
           "teamOVR": 116,
           "turnsTaken": 3,
           "goals": 31,
-          "signedUp": true,
-          "lastLoginDays": 0
-        },
-        {
-          "name": "ULTRÄ",
-          "teamOVR": 116,
-          "turnsTaken": 0,
-          "goals": 0,
           "signedUp": true,
           "lastLoginDays": 0
         }
