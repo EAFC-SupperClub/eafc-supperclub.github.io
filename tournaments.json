@@ -2,6 +2,158 @@
   "leagueName": "Supper Club",
   "tournaments": [
     {
+      "date": "2025-12-08",
+      "season": 11,
+      "opponent": "ALAHLY SC",
+      "ourTurns": 21,
+      "ourGoals": 221,
+      "opponentTurns": 18,
+      "opponentGoals": 182,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "jkjjj",
+          "teamOVR": 119,
+          "turnsTaken": 3,
+          "goals": 33,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Logic-dk",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 32,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "club_africain",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 35,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Gdog",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 27,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "goroblack",
+          "teamOVR": 118,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Traideptayninh",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 35,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "sholexy",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        }
+      ]
+    },
+    {
+      "date": "2025-12-07",
+      "season": 11,
+      "opponent": "TARKAM ID",
+      "ourTurns": 24,
+      "ourGoals": 231,
+      "opponentTurns": 22,
+      "opponentGoals": 232,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "jkjjj",
+          "teamOVR": 119,
+          "turnsTaken": 3,
+          "goals": 31,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Logic-dk",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 31,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "stegosaurus",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "club_africain",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Gdog",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "goroblack",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "sholexy",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 26,
+          "signedUp": true,
+          "lastLoginDays": 0
+        }
+      ]
+    },
+    {
       "date": "2025-12-06",
       "season": 11,
       "opponent": "Aze Qarabağ",
