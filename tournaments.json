@@ -2,6 +2,82 @@
   "leagueName": "Supper Club",
   "tournaments": [
     {
+      "date": "2025-12-09",
+      "season": 11,
+      "opponent": "LIGA MUNICIPAL",
+      "ourTurns": 21,
+      "ourGoals": 203,
+      "opponentTurns": 13,
+      "opponentGoals": 129,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "club_africain",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Logic-dk",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 24,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Yasser",
+          "teamOVR": 117,
+          "turnsTaken": 3,
+          "goals": 31,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Gdog",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "sholexy",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 26,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "xyz.shter",
+          "teamOVR": 118,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "ARES",
+          "teamOVR": 117,
+          "turnsTaken": 3,
+          "goals": 24,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Traideptayninh",
+          "teamOVR": 118,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": true,
+          "lastLoginDays": 0
+        }
+      ]
+    },
+    {
       "date": "2025-12-08",
       "season": 11,
       "opponent": "ALAHLY SC",
