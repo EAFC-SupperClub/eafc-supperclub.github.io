@@ -2,6 +2,719 @@
   "leagueName": "Supper Club",
   "tournaments": [
     {
+      "date": "2026-01-23",
+      "season": 13,
+      "opponent": "LIGA CORINTHIANS",
+      "ourTurns": 44,
+      "ourGoals": 423,
+      "opponentTurns": 41,
+      "opponentGoals": 395,
+      "possibleTurns": 48,
+      "players": [
+        {
+          "name": "Bayernmaniac",
+          "teamOVR": 121,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Sahak3an",
+          "teamOVR": 121,
+          "turnsTaken": 3,
+          "goals": 32,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "stegosaurus",
+          "teamOVR": 121,
+          "turnsTaken": 3,
+          "goals": 32,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Logic-dk",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "club_africain",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 25,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 36,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "GIUBENTUS",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 18,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "mauricio05",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Gdog",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 24,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "jkjjj",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "goroblack",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 33,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "SirDjango89",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 23,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Mahin-ronaldo",
+          "teamOVR": 119,
+          "turnsTaken": 3,
+          "goals": 27,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Zusty673",
+          "teamOVR": 119,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "dipth263",
+          "teamOVR": 119,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Traideptayninh",
+          "teamOVR": 119,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        }
+      ]
+    },
+    {
+      "date": "2026-01-22",
+      "season": 13,
+      "opponent": "MiguelFC",
+      "ourTurns": 42,
+      "ourGoals": 408,
+      "opponentTurns": 39,
+      "opponentGoals": 388,
+      "possibleTurns": 48,
+      "players": [
+        {
+          "name": "Sahak3an",
+          "teamOVR": 121,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "stegosaurus",
+          "teamOVR": 121,
+          "turnsTaken": 3,
+          "goals": 32,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Logic-dk",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "club_africain",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 31,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Gdog",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 31,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "jkjjj",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "goroblack",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 32,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "SirDjango89",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "BOOM",
+          "teamOVR": 120,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "GIUBENTUS",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 25,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "mauricio05",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Mahin-ronaldo",
+          "teamOVR": 119,
+          "turnsTaken": 3,
+          "goals": 24,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "dipth263",
+          "teamOVR": 119,
+          "turnsTaken": 3,
+          "goals": 27,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Traideptayninh",
+          "teamOVR": 119,
+          "turnsTaken": 3,
+          "goals": 32,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": ".......",
+          "teamOVR": 119,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        }
+      ]
+    },
+    {
+      "date": "2026-01-21",
+      "season": 13,
+      "opponent": "LIGA LEGEND",
+      "ourTurns": 42,
+      "ourGoals": 402,
+      "opponentTurns": 48,
+      "opponentGoals": 467,
+      "possibleTurns": 48,
+      "players": [
+        {
+          "name": "Bayernmaniac",
+          "teamOVR": 121,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Sahak3an",
+          "teamOVR": 121,
+          "turnsTaken": 3,
+          "goals": 32,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "stegosaurus",
+          "teamOVR": 121,
+          "turnsTaken": 3,
+          "goals": 33,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Logic-dk",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 33,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "LeTonky",
+          "teamOVR": 120,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "club_africain",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 31,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Gdog",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 27,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "jkjjj",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 31,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "goroblack",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 26,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "sholexy",
+          "teamOVR": 120,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "SirDjango89",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "GIUBENTUS",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 24,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Mahin-ronaldo",
+          "teamOVR": 119,
+          "turnsTaken": 3,
+          "goals": 25,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "dipth263",
+          "teamOVR": 119,
+          "turnsTaken": 3,
+          "goals": 24,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Traideptayninh",
+          "teamOVR": 119,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": true,
+          "lastLoginDays": 0
+        }
+      ]
+    },
+    {
+      "date": "2026-01-20",
+      "season": 13,
+      "opponent": "TEAM POLSKA",
+      "ourTurns": 37,
+      "ourGoals": 363,
+      "opponentTurns": 36,
+      "opponentGoals": 347,
+      "possibleTurns": 48,
+      "players": [
+        {
+          "name": "Sahak3an",
+          "teamOVR": 121,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "stegosaurus",
+          "teamOVR": 121,
+          "turnsTaken": 3,
+          "goals": 25,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Logic-dk",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "club_africain",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 32,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "uneedthesun",
+          "teamOVR": 119,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "mauricio05",
+          "teamOVR": 120,
+          "turnsTaken": 1,
+          "goals": 7,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Gdog",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "jkjjj",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "goroblack",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "SirDjango89",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 25,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Grey",
+          "teamOVR": 120,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 31,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "GIUBENTUS",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 36,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "ARES",
+          "teamOVR": 120,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "dipth263",
+          "teamOVR": 119,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Traideptayninh",
+          "teamOVR": 119,
+          "turnsTaken": 3,
+          "goals": 35,
+          "signedUp": true,
+          "lastLoginDays": 0
+        }
+      ]
+    },
+    {
+      "date": "2026-01-19",
+      "season": 13,
+      "opponent": "MYSTERY TEAM FC",
+      "ourTurns": 24,
+      "ourGoals": 228,
+      "opponentTurns": 21,
+      "opponentGoals": 235,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "club_africain",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 27,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "mauricio05",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 27,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Gdog",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "jkjjj",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 32,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "goroblack",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "SirDjango89",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 25,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Traideptayninh",
+          "teamOVR": 119,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": true,
+          "lastLoginDays": 0
+        }
+      ]
+    },
+    {
+      "date": "2026-01-18",
+      "season": 13,
+      "opponent": "HAREEF FC",
+      "ourTurns": 24,
+      "ourGoals": 221,
+      "opponentTurns": 13,
+      "opponentGoals": 140,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "stegosaurus",
+          "teamOVR": 121,
+          "turnsTaken": 3,
+          "goals": 33,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "club_africain",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Gdog",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "jkjjj",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 22,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Grey",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 24,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 34,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+
+        {
+          "name": "goroblack",
+          "teamOVR": 120,
+          "turnsTaken": 3,
+          "goals": 22,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Traideptayninh",
+          "teamOVR": 119,
+          "turnsTaken": 3,
+          "goals": 28,
+          "signedUp": true,
+          "lastLoginDays": 0
+        }
+      ]
+    },
+    {
       "date": "2026-01-13",
       "season": 12,
       "opponent": "ULTIMATE LEAGUE",
