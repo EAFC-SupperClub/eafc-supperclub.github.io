@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Supper Club — Tournament Dashboard</title>
+<style>
+  :root{
+    --bg:#0b0f12;
+    --panel:#0f1620;
+    --muted:#9aa7b2;
+    --accent:#2dd4bf;
+    --win:#16a34a;
+    --loss:#ef4444;
+    --table-border: rgba(255,255,255,0.06);
+    --row-alt: rgba(255,255,255,0.02);
+    --card-shadow: 0 6px 18px rgba(2,6,23,0.7);
+  }
+  html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;}
+  body{background:linear-gradient(180deg,#061018 0%, #07131a 100%); color:#e6eef3; padding:28px;}
+  .container{max-width:1100px;margin:0 auto;}
+  header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+  .title{font-size:28px;font-weight:700;letter-spacing:-0.5px}
+  .subtitle{color:var(--muted); font-size:13px}
+  .card{background:var(--panel); border:1px solid var(--table-border); border-radius:10px; padding:18px; box-shadow:var(--card-shadow); margin-bottom:18px}
+  h2{margin:0 0 12px 0;font-size:18px}
+  table{width:100%;border-collapse:collapse;font-size:13px;}
+  th,td{padding:10px 8px;border-bottom:1px solid rgba(255,255,255,0.03);text-align:center}
+  thead th{background:transparent;color:var(--muted);font-weight:600; font-size:12px; text-transform:uppercase; letter-spacing:0.6px}
+  tbody tr:nth-child(even){background:var(--row-alt)}
+  .small{font-size:12px;color:var(--muted)}
+  .icon-excellent{color:var(--accent); font-weight:700}
+  .icon-reliable{color:#60a5fa; font-weight:700}
+  .icon-inconsistent{color:#f59e0b; font-weight:700}
+  .icon-unreliable{color:var(--loss); font-weight:700}
+  .win{color:var(--win); font-weight:700}
+  .loss{color:var(--loss); font-weight:700}
+  .muted{color:var(--muted)}
+  .flex{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  @media (max-width:900px){
+    th,td{padding:8px 6px;font-size:12px}
+    .title{font-size:20px}
+  }
+  .note{color:var(--muted);font-size:13px;margin-top:8px}
+  code{background:#0b1320;padding:2px 6px;border-radius:4px;}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div>
+      <div class="title" id="league-name">Supper Club</div>
+      <div class="subtitle">Tournament dashboard — historical data loaded from <code>tournamentsTournaments.json</code></div>
+    </div>
+  </header>
+
+  <section class="card" id="tournaments-card">
+    <h2>League — Tournament Summary</h2>
+    <table id="league-summary">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Opponent</th>
+          <th>Our Turns</th>
+          <th>Our Goals</th>
+          <th>Avg Goals/Turn</th>
+          <th>Opponent Turns</th>
+          <th>Opponent Goals</th>
+          <th>Completion %</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="note" id="league-totals"></div>
+  </section>
+
+  <section class="card" id="players-card">
+    <h2>Player-Level Cumulative Tracker (appeared at least once)</h2>
+    <table id="player-tracker">
+      <thead>
+        <tr>
+          <th>Player</th>
+          <th>Tournaments</th>
+          <th>Possible Turns</th>
+          <th>Turns Taken</th>
+          <th>Missed Turns</th>
+          <th>Avg Goals/Turn</th>
+          <th>Reliability %</th>
+          <th>Reliability</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="note">Reliability legend: <span class="icon-excellent">⭐ Excellent</span> (≥95%) · <span class="icon-reliable">✅ Reliable</span> (75–94%) · <span class="icon-inconsistent">⚠️ Inconsistent</span> (50–74%) · <span class="icon-unreliable">❌ Unreliable</span> (&lt;50%)</div>
+  </section>
+
+</div>
+
+<script>
+// Utility helpers
+function fmt(n, digits=2){ return (Number(n) || 0).toFixed(digits); }
+function pct(n){ return Math.round(Number(n)||0) + '%'; }
+function reliabilityIcon(pctVal){
+  if (pctVal >= 95) return {text:'⭐ Excellent', cls:'icon-excellent'};
+  if (pctVal >= 75) return {text:'✅ Reliable', cls:'icon-reliable'};
+  if (pctVal >= 50) return {text:'⚠️ Inconsistent', cls:'icon-inconsistent'};
+  return {text:'❌ Unreliable', cls:'icon-unreliable'};
+}
+
+// Load tournaments.json and render tables
+fetch('historyTournaments.json')
+  .then(r => r.json())
+  .then(data => {
+    const leagueName = data.leagueName || 'Supper Club';
+    document.getElementById('league-name').textContent = leagueName + ' — Tournament Dashboard';
+
+    const tournaments = data.tournaments || [];
+    // sort by date desc
+    tournaments.sort((a,b)=> new Date(b.date) - new Date(a.date));
+
+    const leagueBody = document.querySelector('#league-summary tbody');
+    const playerMap = {}; // name -> {tournaments, possibleTurns, turnsTaken, goals}
+
+    let totalGoals = 0, totalTurns = 0, totalPossibleTurns = 0, wins=0, losses=0, draws=0;
+
+    tournaments.forEach(t => {
+      // append league row
+      const avgGoals = t.ourTurns ? (t.ourGoals / t.ourTurns) : 0;
+      const completionPct = t.possibleTurns ? Math.round((t.ourTurns / t.possibleTurns)*100) : Math.round((t.ourTurns / (t.players.length*3))*100);
+      let result = 'Draw';
+      if (t.ourGoals > t.opponentGoals) { result = 'Win'; wins++; }
+      else if (t.ourGoals < t.opponentGoals) { result = 'Loss'; losses++; }
+      else { draws++; }
+
+      totalGoals += t.ourGoals;
+      totalTurns += t.ourTurns;
+      totalPossibleTurns += (t.possibleTurns || (t.players.length*3));
+
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${t.date}</td>
+        <td>${t.opponent}</td>
+        <td>${t.ourTurns}</td>
+        <td>${t.ourGoals}</td>
+        <td>${fmt(avgGoals,2)}</td>
+        <td>${t.opponentTurns}</td>
+        <td>${t.opponentGoals}</td>
+        <td>${completionPct}%</td>
+        <td class="${result==='Win'?'win':'loss'}">${result}</td>`;
+      leagueBody.appendChild(row);
+
+      // accumulate player-level
+      (t.players || []).forEach(p => {
+        const name = p.name;
+        if (!playerMap[name]) playerMap[name] = {tournaments:0, possibleTurns:0, turnsTaken:0, goals:0};
+        playerMap[name].tournaments += 1;
+        playerMap[name].possibleTurns += 3;
+        playerMap[name].turnsTaken += (p.turnsTaken || 0);
+        playerMap[name].goals += (p.goals || 0);
+      });
+    });
+
+    // league totals summary
+    const completionOverall = totalPossibleTurns ? Math.round((totalTurns/totalPossibleTurns)*100) : 0;
+    const goalsPerTurnOverall = fmt((totalGoals/totalTurns),2);
+    document.getElementById('league-totals').innerHTML = `Total goals: <strong>${totalGoals}</strong> — Total turns: <strong>${totalTurns}</strong> / <strong>${totalPossibleTurns}</strong> possible — Overall Avg Goals/Turn: <strong>${goalsPerTurnOverall}</strong> — Completion: <strong>${completionOverall}%</strong> — Record: <strong>${wins}W - ${losses}L - ${draws}D</strong>`;
+
+    // build player table sorted by reliability then turns taken desc
+    const playersArr = Object.entries(playerMap).map(([name, p])=>{
+      const missed = p.possibleTurns - p.turnsTaken;
+      const avgGoalsPerTurn = p.turnsTaken ? (p.goals / p.turnsTaken) : 0;
+      const reliabilityPct = p.possibleTurns ? Math.round((p.turnsTaken / p.possibleTurns)*100) : 0;
+      return {name, tournaments:p.tournaments, possibleTurns:p.possibleTurns, turnsTaken:p.turnsTaken, missed, avgGoalsPerTurn, reliabilityPct};
+    });
+
+    playersArr.sort((a,b)=>{
+      if (b.reliabilityPct !== a.reliabilityPct) return b.reliabilityPct - a.reliabilityPct;
+      return b.turnsTaken - a.turnsTaken;
+    });
+
+    const playerBody = document.querySelector('#player-tracker tbody');
+    playersArr.forEach(p=>{
+      const icon = reliabilityIcon(p.reliabilityPct);
+      const tr = document.createElement('tr');
+      tr.innerHTML = `<td>${p.name}</td><td>${p.tournaments}</td><td>${p.possibleTurns}</td><td>${p.turnsTaken}</td><td>${p.missed}</td><td>${fmt(p.avgGoalsPerTurn,1)}</td><td>${p.reliabilityPct}</td><td class="${icon.cls}">${icon.text}</td>`;
+      playerBody.appendChild(tr);
+    });
+  })
+  .catch(err => {
+    document.querySelector('#league-totals').textContent = 'Error loading tournaments.json: ' + err;
+  });
+</script>
+</body>
+</html>
