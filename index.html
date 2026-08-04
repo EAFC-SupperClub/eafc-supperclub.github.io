@@ -141,7 +141,7 @@ fetch('tournaments.json')
       row.innerHTML = `
         <td>${t.date}</td>
         <td>${t.opponent}</td>
-        <td>${t.ourTurns}/${t.possibleTurns}</td>
+        <td>${t.ourTurns} / ${t.possibleTurns}</td>
         <td>${t.ourGoals}</td>
         <td>${fmt(avgGoals,2)}</td>
         <td>${t.opponentTurns}</td>
