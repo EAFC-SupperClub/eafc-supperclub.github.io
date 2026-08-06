@@ -2,6 +2,146 @@
   "leagueName": "Supper Club",
   "tournaments": [
     {
+      "date": "2026-08-04",
+      "season": 19,
+      "opponent": "REDHAWKS LEAGUE",
+      "ourTurns": 42,
+      "ourGoals": 432,
+      "opponentTurns": 34,
+      "opponentGoals": 352,
+      "possibleTurns": 48,
+      "players": [
+        {
+          "name": "ReDcAp",
+          "teamOVR": 126,
+          "turnsTaken": 3,
+          "goals": 24,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Wugs",
+          "teamOVR": 128,
+          "turnsTaken": 3,
+          "goals": 25,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "stegosaurus",
+          "teamOVR": 126,
+          "turnsTaken": 3,
+          "goals": 34,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "club_africain",
+          "teamOVR": 126,
+          "turnsTaken": 3,
+          "goals": 35,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "teamOVR": 126,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Gdog",
+          "teamOVR": 126,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "jkjjj",
+          "teamOVR": 126,
+          "turnsTaken": 3,
+          "goals": 31,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "goroblack",
+          "teamOVR": 126,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "sholexy",
+          "teamOVR": 126,
+          "turnsTaken": 3,
+          "goals": 31,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "liii",
+          "teamOVR": 126,
+          "turnsTaken": 3,
+          "goals": 34,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "iMakMak",
+          "teamOVR": 126,
+          "turnsTaken": 3,
+          "goals": 40,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "ARES",
+          "teamOVR": 125,
+          "turnsTaken": 3,
+          "goals": 23,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "aryanXD",
+          "teamOVR": 125,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Pablito",
+          "teamOVR": 125,
+          "turnsTaken": 3,
+          "goals": 34,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Logic-dk",
+          "teamOVR": 124,
+          "turnsTaken": 3,
+          "goals": 31,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "mauricio05",
+          "teamOVR": 124,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        }
+      ]
+    },
+    {
       "date": "2026-08-03",
       "season": 19,
       "opponent": "liga ney",
@@ -64,7 +204,7 @@
           "teamOVR": 126,
           "turnsTaken": 3,
           "goals": 31,
-          "signedUp": true,
+          "signedUp": false,
           "lastLoginDays": 0
         },
         {
@@ -180,7 +320,7 @@
           "teamOVR": 126,
           "turnsTaken": 3,
           "goals": 26,
-          "signedUp": true,
+          "signedUp": false,
           "lastLoginDays": 0
         },
         {
@@ -272,7 +412,7 @@
           "teamOVR": 126,
           "turnsTaken": 3,
           "goals": 32,
-          "signedUp": true,
+          "signedUp": false,
           "lastLoginDays": 0
         },
         {
@@ -428,7 +568,7 @@
           "teamOVR": 126,
           "turnsTaken": 3,
           "goals": 26,
-          "signedUp": true,
+          "signedUp": false,
           "lastLoginDays": 0
         },
         {
@@ -576,7 +716,7 @@
           "teamOVR": 126,
           "turnsTaken": 3,
           "goals": 31,
-          "signedUp": true,
+          "signedUp": false,
           "lastLoginDays": 0
         },
         {
@@ -708,7 +848,7 @@
           "teamOVR": 126,
           "turnsTaken": 3,
           "goals": 33,
-          "signedUp": true,
+          "signedUp": false,
           "lastLoginDays": 0
         },
         {
@@ -816,7 +956,7 @@
           "teamOVR": 126,
           "turnsTaken": 3,
           "goals": 29,
-          "signedUp": true,
+          "signedUp": false,
           "lastLoginDays": 0
         },
         {
