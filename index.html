@@ -82,9 +82,9 @@
         <tr>
           <th>Player</th>
           <th>Tournaments</th>
-          <th>Possible Turns</th>
           <th>Turns Taken</th>
           <th>Missed Turns</th>
+          <th>Last Missed Turn</th>
           <th>Avg Goals/Turn</th>
           <th>Reliability %</th>
           <th>Reliability</th>
@@ -153,10 +153,13 @@ fetch('tournaments.json')
       // accumulate player-level
       (t.players || []).forEach(p => {
         const name = p.name;
-        if (!playerMap[name]) playerMap[name] = {tournaments:0, possibleTurns:0, turnsTaken:0, goals:0};
+        if (!playerMap[name]) playerMap[name] = {tournaments:0, possibleTurns:0, turnsTaken:0, goals:0, lastMissedTurn: 'N/A'};
         playerMap[name].tournaments += 1;
         playerMap[name].possibleTurns += 3;
         playerMap[name].turnsTaken += (p.turnsTaken || 0);
+        if (playerMap[name].possibleTurns !== playerMap[name].turnsTaken && playerMap[name].lastMissedTurn === 'N/A') {
+            playerMap[name].lastMissedTurn = t.date.toString();
+        }
         playerMap[name].goals += (p.goals || 0);
       });
     });
@@ -169,9 +172,10 @@ fetch('tournaments.json')
     // build player table sorted by reliability then turns taken desc
     const playersArr = Object.entries(playerMap).map(([name, p])=>{
       const missed = p.possibleTurns - p.turnsTaken;
+      const mostRecentMissDate = p.lastMissedTurn;
       const avgGoalsPerTurn = p.turnsTaken ? (p.goals / p.turnsTaken) : 0;
       const reliabilityPct = p.possibleTurns ? Math.round((p.turnsTaken / p.possibleTurns)*100) : 0;
-      return {name, tournaments:p.tournaments, possibleTurns:p.possibleTurns, turnsTaken:p.turnsTaken, missed, avgGoalsPerTurn, reliabilityPct};
+        return {name, tournaments:p.tournaments, possibleTurns:p.possibleTurns, turnsTaken:p.turnsTaken, missed, avgGoalsPerTurn, reliabilityPct, mostRecentMissDate};
     });
 
     playersArr.sort((a,b)=>{
@@ -183,7 +187,7 @@ fetch('tournaments.json')
     playersArr.forEach(p=>{
       const icon = reliabilityIcon(p.reliabilityPct);
       const tr = document.createElement('tr');
-      tr.innerHTML = `<td>${p.name}</td><td>${p.tournaments}</td><td>${p.possibleTurns}</td><td>${p.turnsTaken}</td><td>${p.missed}</td><td>${fmt(p.avgGoalsPerTurn,1)}</td><td>${p.reliabilityPct}</td><td class="${icon.cls}">${icon.text}</td>`;
+      tr.innerHTML = `<td>${p.name}</td><td>${p.tournaments}</td><td>${p.turnsTaken} / ${p.possibleTurns}</td><td>${p.missed}</td><td>${p.mostRecentMissDate}</td><td>${fmt(p.avgGoalsPerTurn,1)}</td><td>${p.reliabilityPct}</td><td class="${icon.cls}">${icon.text}</td>`;
       playerBody.appendChild(tr);
     });
   })
