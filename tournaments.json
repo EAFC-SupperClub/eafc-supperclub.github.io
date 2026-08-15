@@ -1493,7 +1493,8 @@
           "turnsTaken": 0,
           "goals": 0,
           "signedUp": true,
-          "lastLoginDays": 0
+          "lastLoginDays": 0,
+          "memberExited": true
         },
         {
           "name": "Fc-Amine-Dz",
@@ -1885,7 +1886,8 @@
           "turnsTaken": 0,
           "goals": 0,
           "signedUp": true,
-          "lastLoginDays": 0
+          "lastLoginDays": 0,
+          "memberExited": true
         },
         {
           "name": "mauricio05",

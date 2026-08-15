@@ -50,7 +50,7 @@
   <header>
     <div>
       <div class="title" id="league-name">Supper Club</div>
-      <div class="subtitle">Dynamic Tournament dashboard — data loaded from <code>tournaments.json</code></div>
+      <!--div class="subtitle">Dynamic Tournament dashboard — data loaded from <code>tournaments.json</code></div-->
     </div>
   </header>
 
@@ -153,7 +153,10 @@ fetch('tournaments.json')
       // accumulate player-level
       (t.players || []).forEach(p => {
         const name = p.name;
-        if (!playerMap[name]) playerMap[name] = {tournaments:0, possibleTurns:0, turnsTaken:0, goals:0, lastMissedTurn: 'N/A'};
+        if (!playerMap[name]) playerMap[name] = {tournaments:0, possibleTurns:0, turnsTaken:0, goals:0, lastMissedTurn: 'N/A', memberExited: false};
+        if (p.memberExited !== null && p.memberExited === true) {
+            playerMap[name].memberExited = true;
+        }
         playerMap[name].tournaments += 1;
         playerMap[name].possibleTurns += 3;
         playerMap[name].turnsTaken += (p.turnsTaken || 0);
@@ -175,7 +178,8 @@ fetch('tournaments.json')
       const mostRecentMissDate = p.lastMissedTurn;
       const avgGoalsPerTurn = p.turnsTaken ? (p.goals / p.turnsTaken) : 0;
       const reliabilityPct = p.possibleTurns ? Math.round((p.turnsTaken / p.possibleTurns)*100) : 0;
-        return {name, tournaments:p.tournaments, possibleTurns:p.possibleTurns, turnsTaken:p.turnsTaken, missed, avgGoalsPerTurn, reliabilityPct, mostRecentMissDate};
+      const memberExited = p.memberExited;
+        return {name, tournaments:p.tournaments, possibleTurns:p.possibleTurns, turnsTaken:p.turnsTaken, missed, avgGoalsPerTurn, reliabilityPct, mostRecentMissDate, memberExited};
     });
 
     playersArr.sort((a,b)=>{
@@ -185,10 +189,12 @@ fetch('tournaments.json')
 
     const playerBody = document.querySelector('#player-tracker tbody');
     playersArr.forEach(p=>{
-      const icon = reliabilityIcon(p.reliabilityPct);
-      const tr = document.createElement('tr');
-      tr.innerHTML = `<td>${p.name}</td><td>${p.tournaments}</td><td>${p.turnsTaken} / ${p.possibleTurns}</td><td>${p.missed}</td><td>${p.mostRecentMissDate}</td><td>${fmt(p.avgGoalsPerTurn,1)}</td><td>${p.reliabilityPct}</td><td class="${icon.cls}">${icon.text}</td>`;
-      playerBody.appendChild(tr);
+      if (!p.memberExited) { //ignpre stats from players that are no longer part of the league
+          const icon = reliabilityIcon(p.reliabilityPct);
+          const tr = document.createElement('tr');
+          tr.innerHTML = `<td>${p.name}</td><td>${p.tournaments}</td><td>${p.turnsTaken} / ${p.possibleTurns}</td><td>${p.missed}</td><td>${p.mostRecentMissDate}</td><td>${fmt(p.avgGoalsPerTurn,1)}</td><td>${p.reliabilityPct}</td><td class="${icon.cls}">${icon.text}</td>`;
+          playerBody.appendChild(tr);
+      }
     });
   })
   .catch(err => {
