@@ -2,6 +2,82 @@
   "leagueName": "Supper Club",
   "tournaments": [
     {
+      "date": "2026-08-15",
+      "season": 19,
+      "opponent": "London FC",
+      "ourTurns": 21,
+      "ourGoals": 223,
+      "opponentTurns": 24,
+      "opponentGoals": 255,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "ReDcAp",
+          "teamOVR": 130,
+          "turnsTaken": 3,
+          "goals": 36,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "jkjjj",
+          "teamOVR": 127,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "ARES",
+          "teamOVR": 126,
+          "turnsTaken": 3,
+          "goals": 30,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "aryanXD",
+          "teamOVR": 126,
+          "turnsTaken": 3,
+          "goals": 34,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Gdog",
+          "teamOVR": 126,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "goroblack",
+          "teamOVR": 126,
+          "turnsTaken": 3,
+          "goals": 35,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Football_King",
+          "teamOVR": 126,
+          "turnsTaken": 0,
+          "goals": 0,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "liii",
+          "teamOVR": 126,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        }
+      ]
+    },
+    {
       "date": "2026-08-14",
       "season": 19,
       "opponent": "Active",
