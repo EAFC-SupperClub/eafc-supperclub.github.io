@@ -83,6 +83,7 @@
           <th>Player</th>
           <th>Tournaments</th>
           <th>Turns Taken</th>
+          <th>Streak</th>
           <th>Missed Turns</th>
           <th>Last Missed Turn</th>
           <th>Avg Goals/Turn</th>
@@ -153,7 +154,7 @@ fetch('tournaments.json')
       // accumulate player-level
       (t.players || []).forEach(p => {
         const name = p.name;
-        if (!playerMap[name]) playerMap[name] = {tournaments:0, possibleTurns:0, turnsTaken:0, goals:0, lastMissedTurn: 'N/A', memberExited: false};
+        if (!playerMap[name]) playerMap[name] = {tournaments:0, possibleTurns:0, turnsTaken:0, goals:0, lastMissedTurn: 'N/A', memberExited: false, streak:0};
         if (p.memberExited !== null && p.memberExited === true) {
             playerMap[name].memberExited = true;
         }
@@ -162,6 +163,8 @@ fetch('tournaments.json')
         playerMap[name].turnsTaken += (p.turnsTaken || 0);
         if (playerMap[name].possibleTurns !== playerMap[name].turnsTaken && playerMap[name].lastMissedTurn === 'N/A') {
             playerMap[name].lastMissedTurn = t.date.toString();
+        } else if (playerMap[name].possibleTurns === playerMap[name].turnsTaken && playerMap[name].lastMissedTurn === 'N/A') {
+            playerMap[name].streak += 1;
         }
         playerMap[name].goals += (p.goals || 0);
       });
@@ -179,7 +182,7 @@ fetch('tournaments.json')
       const avgGoalsPerTurn = p.turnsTaken ? (p.goals / p.turnsTaken) : 0;
       const reliabilityPct = p.possibleTurns ? Math.round((p.turnsTaken / p.possibleTurns)*100) : 0;
       const memberExited = p.memberExited;
-        return {name, tournaments:p.tournaments, possibleTurns:p.possibleTurns, turnsTaken:p.turnsTaken, missed, avgGoalsPerTurn, reliabilityPct, mostRecentMissDate, memberExited};
+        return {name, tournaments:p.tournaments, possibleTurns:p.possibleTurns, turnsTaken:p.turnsTaken, missed, avgGoalsPerTurn, reliabilityPct, mostRecentMissDate, memberExited, streak:p.streak};
     });
 
     playersArr.sort((a,b)=>{
@@ -192,7 +195,7 @@ fetch('tournaments.json')
       if (!p.memberExited) { //ignpre stats from players that are no longer part of the league
           const icon = reliabilityIcon(p.reliabilityPct);
           const tr = document.createElement('tr');
-          tr.innerHTML = `<td>${p.name}</td><td>${p.tournaments}</td><td>${p.turnsTaken} / ${p.possibleTurns}</td><td>${p.missed}</td><td>${p.mostRecentMissDate}</td><td>${fmt(p.avgGoalsPerTurn,1)}</td><td>${p.reliabilityPct}</td><td class="${icon.cls}">${icon.text}</td>`;
+          tr.innerHTML = `<td>${p.name}</td><td>${p.tournaments}</td><td>${p.turnsTaken} / ${p.possibleTurns}</td><td>${p.streak}</td></td><td>${p.missed}</td><td>${p.mostRecentMissDate}</td><td>${fmt(p.avgGoalsPerTurn,1)}</td><td>${p.reliabilityPct}</td><td class="${icon.cls}">${icon.text}</td>`;
           playerBody.appendChild(tr);
       }
     });
