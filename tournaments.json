@@ -2,6 +2,83 @@
   "leagueName": "Supper Club",
   "tournaments": [
     {
+      "date": "2026-08-17",
+      "season": 19,
+      "opponent": "Masterclass",
+      "ourTurns": 24,
+      "ourGoals": 247,
+      "opponentTurns": 24,
+      "opponentGoals": 267,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "Wugs",
+          "teamOVR": 129,
+          "turnsTaken": 3,
+          "goals": 27,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "jkjjj",
+          "teamOVR": 127,
+          "turnsTaken": 3,
+          "goals": 34,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+
+        {
+          "name": "club_africain",
+          "teamOVR": 126,
+          "turnsTaken": 3,
+          "goals": 33,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "aryanXD",
+          "teamOVR": 126,
+          "turnsTaken": 3,
+          "goals": 32,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Gdog",
+          "teamOVR": 126,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "goroblack",
+          "teamOVR": 126,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": false,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "liii",
+          "teamOVR": 126,
+          "turnsTaken": 3,
+          "goals": 34,
+          "signedUp": true,
+          "lastLoginDays": 0
+        },
+        {
+          "name": "Logic-dk",
+          "teamOVR": 124,
+          "turnsTaken": 3,
+          "goals": 29,
+          "signedUp": true,
+          "lastLoginDays": 0
+        }
+      ]
+    },
+    {
       "date": "2026-08-16",
       "season": 19,
       "opponent": "DZ [Gaza]",
