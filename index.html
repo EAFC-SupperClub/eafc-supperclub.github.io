@@ -133,7 +133,7 @@ fetch('tournaments.json')
     const leagueBody = document.querySelector('#league-summary tbody');
     const playerMap = {}; // name -> {tournaments, possibleTurns, turnsTaken, goals}
 
-    let totalGoals = 0, totalTurns = 0, totalPossibleTurns = 0, wins=0, losses=0, draws=0;
+    let totalGoals = 0, totalTurns = 0, totalPossibleTurns = 0, wins=0, losses=0, draws=0, leagueTourneyRecordLimit=0;
 
     tournaments.forEach(t => {
       // append league row
@@ -159,7 +159,10 @@ fetch('tournaments.json')
         <td>${t.opponentGoals}</td>
         <td>${completionPct}%</td>
         <td class="${result==='Win'?'win':'loss'}">${result}</td>`;
-      leagueBody.appendChild(row);
+      if(leagueTourneyRecordLimit < 10) {
+          leagueBody.appendChild(row);
+          leagueTourneyRecordLimit++;
+      }
 
       // accumulate player-level
       (t.players || []).forEach(p => {
