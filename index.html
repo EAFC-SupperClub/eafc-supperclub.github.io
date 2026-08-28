@@ -133,20 +133,32 @@ fetch('tournaments.json')
     const leagueBody = document.querySelector('#league-summary tbody');
     const playerMap = {}; // name -> {tournaments, possibleTurns, turnsTaken, goals}
 
-    let totalGoals = 0, totalTurns = 0, totalPossibleTurns = 0, wins=0, losses=0, draws=0, leagueTourneyRecordLimit=0;
+    let totalGoals = 0, totalTurns = 0, totalPossibleTurns = 0, wins=0, losses=0, draws=0, leagueTourneyRecordLimit=0, seasonOfData=0;
 
     tournaments.forEach(t => {
       // append league row
       const avgGoals = t.ourTurns ? (t.ourGoals / t.ourTurns) : 0;
       const completionPct = t.possibleTurns ? Math.round((t.ourTurns / t.possibleTurns)*100) : Math.round((t.ourTurns / (t.players.length*3))*100);
       let result = 'Draw';
-      if (t.ourGoals > t.opponentGoals) { result = 'Win'; wins++; }
-      else if (t.ourGoals < t.opponentGoals) { result = 'Loss'; losses++; }
-      else { draws++; }
 
-      totalGoals += t.ourGoals;
-      totalTurns += t.ourTurns;
-      totalPossibleTurns += (t.possibleTurns || (t.players.length*3));
+      // only account for latest season
+      if (t.season > seasonOfData) { seasonOfData = t.season; }
+
+      if (t.ourGoals > t.opponentGoals) {
+          result = 'Win';
+          if (t.season >= seasonOfData) { wins++; }
+      } else if (t.ourGoals < t.opponentGoals) {
+          result = 'Loss';
+          if (t.season >= seasonOfData) { losses++; }
+      }
+      else {
+          if (t.season >= seasonOfData) { draws++; }
+      }
+      if (t.season >= seasonOfData) {
+          totalGoals += t.ourGoals;
+          totalTurns += t.ourTurns;
+          totalPossibleTurns += (t.possibleTurns || (t.players.length*3));
+      }
 
       const row = document.createElement('tr');
       row.innerHTML = `
@@ -186,7 +198,7 @@ fetch('tournaments.json')
     // league totals summary
     const completionOverall = totalPossibleTurns ? Math.round((totalTurns/totalPossibleTurns)*100) : 0;
     const goalsPerTurnOverall = fmt((totalGoals/totalTurns),2);
-    document.getElementById('league-totals').innerHTML = `Total goals: <strong>${totalGoals}</strong> — Total turns: <strong>${totalTurns}</strong> / <strong>${totalPossibleTurns}</strong> possible — Overall Avg Goals/Turn: <strong>${goalsPerTurnOverall}</strong> — Completion: <strong>${completionOverall}%</strong> — Record: <strong>${wins}W - ${losses}L - ${draws}D</strong>`;
+    document.getElementById('league-totals').innerHTML = `Season ${seasonOfData} Total goals: <strong>${totalGoals}</strong> — Total turns: <strong>${totalTurns}</strong> / <strong>${totalPossibleTurns}</strong> possible — Overall Avg Goals/Turn: <strong>${goalsPerTurnOverall}</strong> — Completion: <strong>${completionOverall}%</strong> — Record: <strong>${wins}W - ${losses}L - ${draws}D</strong>`;
 
     // build player table sorted by reliability then turns taken desc
     const playersArr = Object.entries(playerMap).map(([name, p])=>{
