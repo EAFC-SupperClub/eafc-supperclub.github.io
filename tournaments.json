@@ -1816,7 +1816,7 @@
           "goals": 0,
           "signedUp": true,
           "lastLoginDays": 0,
-
+          "memberExited": true
         },
         {
           "name": "liii",
@@ -1941,8 +1941,7 @@
           "turnsTaken": 3,
           "goals": 26,
           "signedUp": true,
-          "lastLoginDays": 0,
-          "memberExited": true
+          "lastLoginDays": 0
         },
         {
           "name": "liii",
