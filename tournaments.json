@@ -5,51 +5,51 @@
       "date": "2026-09-15",
       "season": 20,
       "opponent": "ExNoName",
-      "ourTurns": 21,
-      "ourGoals": 203,
-      "opponentTurns": 24,
-      "opponentGoals": 241,
+      "ourTurns": 18,
+      "ourGoals": 193,
+      "opponentTurns": 12,
+      "opponentGoals": 120,
       "possibleTurns": 24,
       "players": [
         {
           "name": "iMakMak",
           "turnsTaken": 3,
-          "goals": 0
+          "goals": 36
         },
         {
           "name": "jkjjj",
           "turnsTaken": 3,
-          "goals": 31
+          "goals": 33
         },
         {
           "name": "goroblack",
           "turnsTaken": 3,
-          "goals": 27
+          "goals": 30
         },
         {
           "name": "sholexy",
-          "turnsTaken": 3,
-          "goals": 28
-        },
-        {
-          "name": "club_africain",
-          "turnsTaken": 3,
-          "goals": 27
-        },
-        {
-          "name": "ARES",
           "turnsTaken": 0,
           "goals": 0
         },
         {
-          "name": "Logic-dk",
+          "name": "club_africain",
           "turnsTaken": 3,
-          "goals": 28
+          "goals": 33
+        },
+        {
+          "name": "ARES",
+          "turnsTaken": 3,
+          "goals": 26
+        },
+        {
+          "name": "Logic-dk",
+          "turnsTaken": 0,
+          "goals": 0
         },
         {
           "name": "Pablito",
-          "turnsTaken": 3,
-          "goals": 31
+          "turnsTaken": 0,
+          "goals": 35
         }
       ]
     },
