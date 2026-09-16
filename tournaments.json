@@ -5,10 +5,10 @@
       "date": "2026-09-15",
       "season": 20,
       "opponent": "ExNoName",
-      "ourTurns": 18,
-      "ourGoals": 193,
-      "opponentTurns": 12,
-      "opponentGoals": 120,
+      "ourTurns": 21,
+      "ourGoals": 229,
+      "opponentTurns": 18,
+      "opponentGoals": 176,
       "possibleTurns": 24,
       "players": [
         {
@@ -43,8 +43,8 @@
         },
         {
           "name": "Logic-dk",
-          "turnsTaken": 0,
-          "goals": 0
+          "turnsTaken": 3,
+          "goals": 36
         },
         {
           "name": "Pablito",
