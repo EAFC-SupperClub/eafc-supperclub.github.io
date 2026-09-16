@@ -2,6 +2,58 @@
   "leagueName": "Supper Club",
   "tournaments": [
     {
+      "date": "2026-09-15",
+      "season": 20,
+      "opponent": "ExNoName",
+      "ourTurns": 21,
+      "ourGoals": 229,
+      "opponentTurns": 18,
+      "opponentGoals": 176,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "iMakMak",
+          "turnsTaken": 3,
+          "goals": 36
+        },
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "goroblack",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "sholexy",
+          "turnsTaken": 0,
+          "goals": 0
+        },
+        {
+          "name": "club_africain",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "ARES",
+          "turnsTaken": 3,
+          "goals": 26
+        },
+        {
+          "name": "Logic-dk",
+          "turnsTaken": 3,
+          "goals": 36
+        },
+        {
+          "name": "Pablito",
+          "turnsTaken": 0,
+          "goals": 35
+        }
+      ]
+    },
+    {
       "date": "2026-09-14",
       "season": 20,
       "opponent": "TÜRKİYE",
