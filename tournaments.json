@@ -2,6 +2,110 @@
   "leagueName": "Supper Club",
   "tournaments": [
     {
+      "date": "2026-09-17",
+      "season": 20,
+      "opponent": "Kpachar Mawnha",
+      "ourTurns": 21,
+      "ourGoals": 179,
+      "opponentTurns": 21,
+      "opponentGoals": 225,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "Wugs",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 27
+        },
+        {
+          "name": "iMakMak",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "goroblack",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "club_africain",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "liii",
+          "turnsTaken": 0,
+          "goals": 0
+        },
+        {
+          "name": "Gdog",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "ARES",
+          "turnsTaken": 3,
+          "goals": 25
+        }
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "season": 20,
+      "opponent": "100%",
+      "ourTurns": 24,
+      "ourGoals": 257,
+      "opponentTurns": 21,
+      "opponentGoals": 211,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "Wugs",
+          "turnsTaken": 3,
+          "goals": 35
+        },
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 31
+        },
+        {
+          "name": "Logic-dk",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 31
+        },
+        {
+          "name": "Gdog",
+          "turnsTaken": 3,
+          "goals": 28
+        },
+        {
+          "name": "liii",
+          "turnsTaken": 3,
+          "goals": 31
+        },
+        { 
+          "name": "goroblack",
+          "turnsTaken": 3,
+          "goals": 34
+        }
+      ]
+    },
+    {
       "date": "2026-09-15",
       "season": 20,
       "opponent": "ExNoName",
@@ -48,7 +152,7 @@
         },
         {
           "name": "Pablito",
-          "turnsTaken": 0,
+          "turnsTaken": 3,
           "goals": 35
         }
       ]
