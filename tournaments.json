@@ -2,9 +2,165 @@
   "leagueName": "Supper Club",
   "tournaments": [
     {
+      "date": "2026-09-20",
+      "season": 20,
+      "opponent": "*WARRIORS*Z",
+      "ourTurns": 24,
+      "ourGoals": 237,
+      "opponentTurns": 18,
+      "opponentGoals": 187,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "Wugs",
+          "turnsTaken": 3,
+          "goals": 27
+        },
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "iMakMak",
+          "turnsTaken": 3,
+          "goals": 35
+        },
+        {
+          "name": "Logic-dk",
+          "turnsTaken": 3,
+          "goals": 29
+        },
+        {
+          "name": "ARES",
+          "turnsTaken": 3,
+          "goals": 26
+        },
+        {
+          "name": "club_africain",
+          "turnsTaken": 3,
+          "goals": 28
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "Gdog",
+          "turnsTaken": 3,
+          "goals": 26
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "season": 20,
+      "opponent": "the Goals",
+      "ourTurns": 21,
+      "ourGoals": 206,
+      "opponentTurns": 19,
+      "opponentGoals": 198,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "Wugs",
+          "turnsTaken": 3,
+          "goals": 28
+        },
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "iMakMak",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "ARES",
+          "turnsTaken": 3,
+          "goals": 23
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "turnsTaken": 0,
+          "goals": 0
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 31
+        },
+        {
+          "name": "Gdog",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "Pablito",
+          "turnsTaken": 3,
+          "goals": 35
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "season": 20,
+      "opponent": "United We Stand",
+      "ourTurns": 21,
+      "ourGoals": 206,
+      "opponentTurns": 19,
+      "opponentGoals": 198,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "Wugs",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 31
+        },
+        {
+          "name": "Logic-dk",
+          "turnsTaken": 3,
+          "goals": 29
+        },
+        {
+          "name": "club_africain",
+          "turnsTaken": 3,
+          "goals": 28
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "turnsTaken": 3,
+          "goals": 31
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "Gdog",
+          "turnsTaken": 3,
+          "goals": 24
+        },
+        {
+          "name": "goroblack",
+          "turnsTaken": 0,
+          "goals": 0
+        }
+      ]
+    },
+    {
       "date": "2026-09-17",
       "season": 20,
-      "opponent": "Kpachar Mawnha",
+      "opponent": "Красная Машина",
       "ourTurns": 21,
       "ourGoals": 179,
       "opponentTurns": 21,
@@ -56,7 +212,7 @@
     {
       "date": "2026-09-16",
       "season": 20,
-      "opponent": "100%",
+      "opponent": "100% АСТІモ",
       "ourTurns": 24,
       "ourGoals": 257,
       "opponentTurns": 21,
