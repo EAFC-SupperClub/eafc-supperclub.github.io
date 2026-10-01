@@ -2,6 +2,58 @@
   "leagueName": "Supper Club",
   "tournaments": [
     {
+      "date": "2026-10-01",
+      "season": 21,
+      "opponent": "IndonesianAbroad",
+      "ourTurns": 18,
+      "ourGoals": 185,
+      "opponentTurns": 21,
+      "opponentGoals": 215,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 38
+        },
+        {
+          "name": "Logic-dk",
+          "turnsTaken": 3,
+          "goals": 29
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 26
+        },
+        {
+          "name": "Pablito",
+          "turnsTaken": 0,
+          "goals": 0
+        },
+        {
+          "name": "Gdog",
+          "turnsTaken": 3,
+          "goals": 31
+        },
+        {
+          "name": "liii",
+          "turnsTaken": 0,
+          "goals": 0
+        },
+        {
+          "name": "goroblack",
+          "turnsTaken": 3,
+          "goals": 31
+        },
+        {
+          "name": "Pogboom",
+          "turnsTaken": 3,
+          "goals": 30
+        }
+      ]
+    },
+    {
       "date": "2026-09-30",
       "season": 21,
       "opponent": "Liga M",
