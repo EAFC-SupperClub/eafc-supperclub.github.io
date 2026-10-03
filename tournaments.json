@@ -2,6 +2,58 @@
   "leagueName": "Supper Club",
   "tournaments": [
     {
+      "date": "2026-10-03",
+      "season": 21,
+      "opponent": " صلو علي النبي",
+      "ourTurns": 24,
+      "ourGoals": 257,
+      "opponentTurns": 12,
+      "opponentGoals": 121,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "Logic-dk",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "club_africain",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "Pogboom",
+          "turnsTaken": 3,
+          "goals": 29
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "Gdog",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "liii",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "goroblack",
+          "turnsTaken": 3,
+          "goals": 32
+        }
+      ]
+    },
+    {
       "date": "2026-10-02",
       "season": 21,
       "opponent": "THE ELITES",
@@ -252,7 +304,8 @@
         {
           "name": "Ted",
           "turnsTaken": 0,
-          "goals": 0
+          "goals": 0,
+          "memberExited": true
         },
         {
           "name": "FOTEH",
