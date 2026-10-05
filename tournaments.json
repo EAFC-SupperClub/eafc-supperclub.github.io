@@ -2,6 +2,58 @@
   "leagueName": "Supper Club",
   "tournaments": [
     {
+      "date": "2026-10-05",
+      "season": 21,
+      "opponent": "SNOWPACK GHANA",
+      "ourTurns": 24,
+      "ourGoals": 245,
+      "opponentTurns": 24,
+      "opponentGoals": 253,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "Wugs",
+          "turnsTaken": 3,
+          "goals": 31
+        },
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "Logic-dk",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "ARES",
+          "turnsTaken": 3,
+          "goals": 26
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "Pogboom",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 31
+        },
+        {
+          "name": "Gdog",
+          "turnsTaken": 3,
+          "goals": 29
+        }
+      ]
+    },
+    {
       "date": "2026-10-04",
       "season": 21,
       "opponent": "Top Bangladesh'",
