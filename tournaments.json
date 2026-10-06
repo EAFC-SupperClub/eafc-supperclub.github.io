@@ -2,6 +2,58 @@
   "leagueName": "Supper Club",
   "tournaments": [
     {
+      "date": "2026-10-06",
+      "season": 21,
+      "opponent": "Garuda Indonesia",
+      "ourTurns": 24,
+      "ourGoals": 248,
+      "opponentTurns": 20,
+      "opponentGoals": 211,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "Logic-dk",
+          "turnsTaken": 3,
+          "goals": 29
+        },
+        {
+          "name": "Panki",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "club_africain",
+          "turnsTaken": 3,
+          "goals": 31
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "Pablito",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "liii",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "goroblack",
+          "turnsTaken": 3,
+          "goals": 28
+        }
+      ]
+    },
+    {
       "date": "2026-10-05",
       "season": 21,
       "opponent": "SNOWPACK GHANA",
