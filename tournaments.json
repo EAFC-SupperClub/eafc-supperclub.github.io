@@ -2,6 +2,98 @@
   "leagueName": "Supper Club",
   "tournaments": [
     {
+      "date": "2026-10-07",
+      "season": 21,
+      "opponent": "Ya ابطال العرب ❤\uFE0F",
+      "ourTurns": 36,
+      "ourGoals": 389,
+      "opponentTurns": 27,
+      "opponentGoals": 239,
+      "possibleTurns": 48,
+      "players": [
+        {
+          "name": "Wugs",
+          "turnsTaken": 3,
+          "goals": 37
+        },
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 35
+        },
+        {
+          "name": "Logic-dk",
+          "turnsTaken": 3,
+          "goals": 31
+        },
+        {
+          "name": "Panki",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "ARES",
+          "turnsTaken": 3,
+          "goals": 26
+        },
+        {
+          "name": "club_africain",
+          "turnsTaken": 3,
+          "goals": 31
+        },
+        {
+          "name": "kindplayer",
+          "turnsTaken": 0,
+          "goals": 0
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "turnsTaken": 0,
+          "goals": 0
+        },
+        {
+          "name": "Pogboom",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "Pablito",
+          "turnsTaken": 0,
+          "goals": 0
+        },
+        {
+          "name": "Gdog",
+          "turnsTaken": 3,
+          "goals": 31
+        },
+        {
+          "name": "liii",
+          "turnsTaken": 3,
+          "goals": 35
+        },
+        {
+          "name": "stegosaurus",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "goroblack",
+          "turnsTaken": 3,
+          "goals": 35
+        },
+        {
+          "name": "AmIN",
+          "turnsTaken": 0,
+          "goals": 0
+        }
+      ]
+    },
+    {
       "date": "2026-10-06",
       "season": 21,
       "opponent": "Garuda Indonesia",
