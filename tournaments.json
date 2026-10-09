@@ -2,6 +2,110 @@
   "leagueName": "Supper Club",
   "tournaments": [
     {
+      "date": "2026-10-09",
+      "season": 21,
+      "opponent": "ELWARDIAN TEAM",
+      "ourTurns": 20,
+      "ourGoals": 182,
+      "opponentTurns": 24,
+      "opponentGoals": 282,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "Logic-dk",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "ARES",
+          "turnsTaken": 3,
+          "goals": 24
+        },
+        {
+          "name": "club_africain",
+          "turnsTaken": 1,
+          "goals": 0
+        },
+        {
+          "name": "Pogboom",
+          "turnsTaken": 3,
+          "goals": 29
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "Gdog",
+          "turnsTaken": 3,
+          "goals": 31
+        },
+        {
+          "name": "liii",
+          "turnsTaken": 3,
+          "goals": 32
+        }
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "season": 21,
+      "opponent": "KONCO FC",
+      "ourTurns": 24,
+      "ourGoals": 244,
+      "opponentTurns": 21,
+      "opponentGoals": 221,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "goroblack",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "club_africain",
+          "turnsTaken": 3,
+          "goals": 26
+        },
+        {
+          "name": "Pogboom",
+          "turnsTaken": 3,
+          "goals": 27
+        },
+        {
+          "name": "liii",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "Logic-dk",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "Panki",
+          "turnsTaken": 3,
+          "goals": 30
+        }
+      ]
+    },
+    {
       "date": "2026-10-07",
       "season": 21,
       "opponent": "Ya ابطال العرب ❤\uFE0F",
