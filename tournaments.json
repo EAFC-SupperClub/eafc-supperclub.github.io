@@ -2,6 +2,307 @@
   "leagueName": "Supper Club",
   "tournaments": [
     {
+      "date": "2026-10-18",
+      "season": 21,
+      "opponent": "BLACKTHORN UNION",
+      "ourTurns": 21,
+      "ourGoals": 211,
+      "opponentTurns": 21,
+      "opponentGoals": 249,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 29
+        },
+        {
+          "name": "Panki",
+          "turnsTaken": 3,
+          "goals": 31
+        },
+        {
+          "name": "Speedo1",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "Pablito",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "Gdog",
+          "turnsTaken": 3,
+          "goals": 25
+        },
+        {
+          "name": "liii",
+          "turnsTaken": 0,
+          "goals": 0
+        },
+        {
+          "name": "goroblack",
+          "turnsTaken": 3,
+          "goals": 28
+        }
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "season": 21,
+      "opponent": "WOT48TM",
+      "ourTurns": 24,
+      "ourGoals": 249,
+      "opponentTurns": 21,
+      "opponentGoals": 205,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 24
+        },
+        {
+          "name": "Panki",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "Speedo1",
+          "turnsTaken": 3,
+          "goals": 36
+        },
+        {
+          "name": "club_africain",
+          "turnsTaken": 3,
+          "goals": 28
+        },
+        {
+          "name": "Pogboom",
+          "turnsTaken": 3,
+          "goals": 31
+        },
+        {
+          "name": "Pablito",
+          "turnsTaken": 3,
+          "goals": 37
+        },
+        {
+          "name": "liii",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "ARES",
+          "turnsTaken": 3,
+          "goals": 28
+        }
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "season": 21,
+      "opponent": "Alexza Family",
+      "ourTurns": 18,
+      "ourGoals": 187,
+      "opponentTurns": 18,
+      "opponentGoals": 204,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 26
+        },
+        {
+          "name": "Logic-dk",
+          "turnsTaken": 0,
+          "goals": 0
+        },
+        {
+          "name": "Speedo1",
+          "turnsTaken": 3,
+          "goals": 36
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "turnsTaken": 0,
+          "goals": 0
+        },
+        {
+          "name": "Pogboom",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "Gdog",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "goroblack",
+          "turnsTaken": 3,
+          "goals": 29
+        }
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "season": 21,
+      "opponent": "Игровые",
+      "ourTurns": 24,
+      "ourGoals": 243,
+      "opponentTurns": 21,
+      "opponentGoals": 217,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 25
+        },
+        {
+          "name": "Panki",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "Speedo1",
+          "turnsTaken": 3,
+          "goals": 39
+        },
+        {
+          "name": "club_africain",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "Pogboom",
+          "turnsTaken": 3,
+          "goals": 27
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "Pablito",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "goroblack",
+          "turnsTaken": 3,
+          "goals": 26
+        }
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "season": 21,
+      "opponent": "FamiliaFutbolera",
+      "ourTurns": 37,
+      "ourGoals": 377,
+      "opponentTurns": 45,
+      "opponentGoals": 468,
+      "possibleTurns": 48,
+      "players": [
+        {
+          "name": "Wugs",
+          "turnsTaken": 0,
+          "goals": 0
+        },
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "stegosaurus",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "Panki",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "goroblack",
+          "turnsTaken": 3,
+          "goals": 35
+        },
+        {
+          "name": "Gdog",
+          "turnsTaken": 3,
+          "goals": 28
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 27
+        },
+        {
+          "name": "club_africain",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "ARES",
+          "turnsTaken": 0,
+          "goals": 0
+        },
+        {
+          "name": "liii",
+          "turnsTaken": 0,
+          "goals": 0
+        },
+        {
+          "name": "Pogboom",
+          "turnsTaken": 3,
+          "goals": 35
+        },
+        {
+          "name": "Logic-dk",
+          "turnsTaken": 3,
+          "goals": 28
+        },
+        {
+          "name": "Speedo1",
+          "turnsTaken": 3,
+          "goals": 37
+        },
+        {
+          "name": "Pablito",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "turnsTaken": 1,
+          "goals": 0
+        },
+        {
+          "name": "putra",
+          "turnsTaken": 3,
+          "goals": 23,
+          "memberExited": true
+        }
+      ]
+    },
+    {
       "date": "2026-10-13",
       "season": 21,
       "opponent": "Za Россию",
