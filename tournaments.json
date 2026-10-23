@@ -2,6 +2,214 @@
   "leagueName": "Supper Club",
   "tournaments": [
     {
+      "date": "2026-10-22",
+      "season": 22,
+      "opponent": "El Salvador 503",
+      "ourTurns": 24,
+      "ourGoals": 256,
+      "opponentTurns": 21,
+      "opponentGoals": 224,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "Logic-dk",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "Pablito",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "club_africain",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "ARES",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "Speedo1",
+          "turnsTaken": 3,
+          "goals": 39
+        },
+        {
+          "name": "Gdog",
+          "turnsTaken": 3,
+          "goals": 32
+        }
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "season": 22,
+      "opponent": "ELEPHANT",
+      "ourTurns": 24,
+      "ourGoals": 240,
+      "opponentTurns": 16,
+      "opponentGoals": 177,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "Pablito",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "Panki",
+          "turnsTaken": 3,
+          "goals": 28
+        },
+        {
+          "name": "club_africain",
+          "turnsTaken": 3,
+          "goals": 29
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "Pogboom",
+          "turnsTaken": 3,
+          "goals": 25
+        },
+        {
+          "name": "Speedo1",
+          "turnsTaken": 3,
+          "goals": 35
+        },
+        {
+          "name": "goroblack",
+          "turnsTaken": 3,
+          "goals": 31
+        }
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "season": 21,
+      "opponent": "The Legacy BD",
+      "ourTurns": 22,
+      "ourGoals": 215,
+      "opponentTurns": 18,
+      "opponentGoals": 181,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "P4sebas",
+          "turnsTaken": 1,
+          "goals": 7
+        },
+        {
+          "name": "Pablito",
+          "turnsTaken": 3,
+          "goals": 29
+        },
+        {
+          "name": "Gdog",
+          "turnsTaken": 3,
+          "goals": 25
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "Pogboom",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "Speedo1",
+          "turnsTaken": 3,
+          "goals": 40
+        },
+        {
+          "name": "ARES",
+          "turnsTaken": 3,
+          "goals": 16
+        }
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "season": 21,
+      "opponent": "REALKÓLIKOS",
+      "ourTurns": 21,
+      "ourGoals": 218,
+      "opponentTurns": 18,
+      "opponentGoals": 191,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 25
+        },
+        {
+          "name": "Logic-dk",
+          "turnsTaken": 0,
+          "goals": 0
+        },
+        {
+          "name": "Panki",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "club_africain",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "Pogboom",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "Speedo1",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "goroblack",
+          "turnsTaken": 3,
+          "goals": 32
+        }
+      ]
+    },
+    {
       "date": "2026-10-18",
       "season": 21,
       "opponent": "BLACKTHORN UNION",
