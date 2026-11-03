@@ -2,6 +2,438 @@
   "leagueName": "Supper Club",
   "tournaments": [
     {
+      "date": "2026-11-03",
+      "season": 22,
+      "opponent": "Underdog",
+      "ourTurns": 24,
+      "ourGoals": 255,
+      "opponentTurns": 24,
+      "opponentGoals": 267,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "666",
+          "turnsTaken": 3,
+          "goals": 35
+        },
+        {
+          "name": "Panki",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 29
+        },
+        {
+          "name": "Pogboom",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "goroblack",
+          "turnsTaken": 3,
+          "goals": 37
+        },
+        {
+          "name": "Gdog",
+          "turnsTaken": 3,
+          "goals": 26
+        },
+        {
+          "name": "Speedo1",
+          "turnsTaken": 3,
+          "goals": 31
+        }
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "season": 22,
+      "opponent": "Grupo H. Gt",
+      "ourTurns": 21,
+      "ourGoals": 224,
+      "opponentTurns": 19,
+      "opponentGoals": 190,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "Logic-dk",
+          "turnsTaken": 3,
+          "goals": 35
+        },
+        {
+          "name": "club_africain",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "Pablito",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "liii",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "turnsTaken": 0,
+          "goals": 0
+        },
+        {
+          "name": "ARES",
+          "turnsTaken": 3,
+          "goals": 27
+        }
+      ]
+    },
+    {
+      "date": "2026-11-01",
+      "season": 22,
+      "opponent": "Офшор",
+      "ourTurns": 24,
+      "ourGoals": 260,
+      "opponentTurns": 21,
+      "opponentGoals": 234,
+      "possibleTurns": 24,
+      "players": [
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "666",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "Panki",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "Pogboom",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "goroblack",
+          "turnsTaken": 3,
+          "goals": 31
+        },
+        {
+          "name": "Gdog",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "Speedo1",
+          "turnsTaken": 3,
+          "goals": 36
+        }
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "season": 22,
+      "opponent": "ICON BD",
+      "ourTurns": 42,
+      "ourGoals": 435,
+      "opponentTurns": 45,
+      "opponentGoals": 471,
+      "possibleTurns": 48,
+      "players": [
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 36
+        },
+        {
+          "name": "Panki",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "Logic-dk",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "666",
+          "turnsTaken": 3,
+          "goals": 37
+        },
+        {
+          "name": "ARES",
+          "turnsTaken": 3,
+          "goals": 28
+        },
+        {
+          "name": "club_africain",
+          "turnsTaken": 0,
+          "goals": 0
+        },
+        {
+          "name": "Pogboom",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 29
+        },
+        {
+          "name": "Pablito",
+          "turnsTaken": 3,
+          "goals": 36
+        },
+        {
+          "name": "Gdog",
+          "turnsTaken": 3,
+          "goals": 29
+        },
+        {
+          "name": "stegosaurus",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "Speedo1",
+          "turnsTaken": 3,
+          "goals": 37
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "liii",
+          "turnsTaken": 3,
+          "goals": 10
+        },
+        {
+          "name": "AmIN",
+          "turnsTaken": 0,
+          "goals": 0
+        },
+        {
+          "name": "goroblack",
+          "turnsTaken": 3,
+          "goals": 33
+        }
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "season": 22,
+      "opponent": "LEGEND SHOW BD",
+      "ourTurns": 42,
+      "ourGoals": 447,
+      "opponentTurns": 43,
+      "opponentGoals": 433,
+      "possibleTurns": 48,
+      "players": [
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 35
+        },
+        {
+          "name": "Panki",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "Logic-dk",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "666",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "ARES",
+          "turnsTaken": 3,
+          "goals": 27
+        },
+        {
+          "name": "club_africain",
+          "turnsTaken": 3,
+          "goals": 31
+        },
+        {
+          "name": "Pogboom",
+          "turnsTaken": 3,
+          "goals": 29
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 35
+        },
+        {
+          "name": "Pablito",
+          "turnsTaken": 0,
+          "goals": 0
+        },
+        {
+          "name": "Gdog",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "stegosaurus",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "Speedo1",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "liii",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "Arufifubuki77",
+          "turnsTaken": 0,
+          "goals": 0
+        },
+        {
+          "name": "goroblack",
+          "turnsTaken": 3,
+          "goals": 28
+        }
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "season": 22,
+      "opponent": "VISIT INDONESIAN",
+      "ourTurns": 45,
+      "ourGoals": 480,
+      "opponentTurns": 41,
+      "opponentGoals": 445,
+      "possibleTurns": 48,
+      "players": [
+        {
+          "name": "jkjjj",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "Panki",
+          "turnsTaken": 3,
+          "goals": 35
+        },
+        {
+          "name": "Logic-dk",
+          "turnsTaken": 3,
+          "goals": 29
+        },
+        {
+          "name": "666",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "ARES",
+          "turnsTaken": 3,
+          "goals": 25
+        },
+        {
+          "name": "club_africain",
+          "turnsTaken": 3,
+          "goals": 32
+        },
+        {
+          "name": "Pogboom",
+          "turnsTaken": 3,
+          "goals": 37
+        },
+        {
+          "name": "aryanXD",
+          "turnsTaken": 3,
+          "goals": 35
+        },
+        {
+          "name": "Pablito",
+          "turnsTaken": 3,
+          "goals": 30
+        },
+        {
+          "name": "Gdog",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "stegosaurus",
+          "turnsTaken": 3,
+          "goals": 28
+        },
+        {
+          "name": "Speedo1",
+          "turnsTaken": 3,
+          "goals": 35
+        },
+        {
+          "name": "Fc-Amine-Dz",
+          "turnsTaken": 3,
+          "goals": 34
+        },
+        {
+          "name": "liii",
+          "turnsTaken": 3,
+          "goals": 33
+        },
+        {
+          "name": "yasithx",
+          "turnsTaken": 0,
+          "goals": 0
+        },
+        {
+          "name": "goroblack",
+          "turnsTaken": 3,
+          "goals": 27
+        }
+      ]
+    },
+    {
       "date": "2026-10-28",
       "season": 22,
       "opponent": "JR LEGENDS BD",
